@@ -536,30 +536,12 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>GitHub</strong> is a cloud platform for storing and sharing Git repositories. It is where the workshop code lives and where you will back up your work. You need a free account; no software installation required.</p>
 <section id="how-they-connect" class="level3">
 <h3 class="anchored" data-anchor-id="how-they-connect">How They Connect</h3>
-<pre class="mermaid"><code>flowchart LR
-    subgraph vscode["VS Code — Your Workspace"]
-        Editor["editor\nwrite .py files"]
-        GitBash["Git Bash\nbuilt-in terminal"]
-    end
-
-    subgraph run["Run"]
-        Env["conda environment\nstudent-report\nPython + packages"]
-    end
-
-    subgraph output["Output"]
-        Reports["reports/\n.csv  .png  .xlsx"]
-    end
-
-    subgraph track["Save &amp; Share"]
-        Git["Git\nversion control"]
-        GitHub["GitHub\ncloud storage"]
-    end
-
-    GitBash --&gt;|"conda activate\npython main.py"| Env
-    Env --&gt;|"pipeline produces"| Reports
-    GitBash --&gt;|"git commit\ngit push"| Git
-    Git --&gt;|"push"| GitHub
-    GitHub --&gt;|"fork &amp; clone"| GitBash</code></pre>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../diagrams/tool_stack.png" class="img-fluid figure-img"></p>
+<figcaption>Tool stack diagram showing VS Code, Git Bash, conda environment, Git, and GitHub and how they connect</figcaption>
+</figure>
+</div>
 <p>You write Python files in the VS Code editor. Git Bash — running as the built-in terminal inside VS Code — is where you type commands. Those commands activate the conda environment to run your code, produce the output files, and save your work to Git and GitHub.</p>
 <hr>
 </section>
