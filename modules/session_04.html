@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Session 4 — Merging the Three Sources – Automating Data Analytics with Python</title>
+<title>Session 4 — Pandas and Working with Data – Automating Data Analytics with Python</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -286,7 +286,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/session_03.html">Phase 1: Working with Provided Data</a></li><li class="breadcrumb-item"><a href="../modules/session_04.html"><span class="chapter-title">Session 4 — Merging the Three Sources</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/session_03.html">Phase 1: Working with Provided Data</a></li><li class="breadcrumb-item"><a href="../modules/session_04.html"><span class="chapter-title">Session 4 — Pandas and Working with Data</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -357,27 +357,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 3 — Pandas and Working with Data</span></a>
+  <a href="../modules/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before You Begin — Python Foundations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_04.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Session 4 — Merging the Three Sources</span></a>
+  <a href="../modules/session_04.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Session 4 — Pandas and Working with Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 — Aggregations and Summary Statistics</span></a>
+  <a href="../modules/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 — Merging the Three Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 — Creating Visualizations</span></a>
+  <a href="../modules/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 — Aggregations and Summary Statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 — Generating the Excel Report</span></a>
+  <a href="../modules/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 — Creating Visualizations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 — Generating the Excel Report</span></a>
   </div>
 </li>
       </ul>
@@ -393,22 +398,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 — Connecting to the Database</span></a>
+  <a href="../modules/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 — Connecting to the Database</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 — Working with Database Results</span></a>
+  <a href="../modules/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 — Working with Database Results</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 — Calling a Web API</span></a>
+  <a href="../modules/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 — Calling a Web API</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 — Working with API Results</span></a>
+  <a href="../modules/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 — Working with API Results</span></a>
   </div>
 </li>
       </ul>
@@ -424,7 +429,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 — The Automated Pipeline</span></a>
+  <a href="../modules/session_13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 13 — The Automated Pipeline</span></a>
   </div>
 </li>
       </ul>
@@ -440,7 +445,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 13 — Introduction to Unit Testing <em>(Optional)</em></span></a>
+  <a href="../modules/session_14.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 14 — Introduction to Unit Testing <em>(Optional)</em></span></a>
   </div>
 </li>
       </ul>
@@ -456,47 +461,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 3 Exercise — Pandas Basics</span></a>
+  <a href="../exercises/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before You Begin Exercise — Python Foundations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 Exercise — Merging Three Sources</span></a>
+  <a href="../exercises/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 Exercise — Pandas Basics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 Exercise — Aggregations and Summary Statistics</span></a>
+  <a href="../exercises/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 Exercise — Merging Three Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 Exercise — Creating Visualizations</span></a>
+  <a href="../exercises/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 Exercise — Aggregations and Summary Statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 Exercise — Generating the Excel Report</span></a>
+  <a href="../exercises/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 Exercise — Creating Visualizations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 Exercise — Oracle Connection</span></a>
+  <a href="../exercises/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 Exercise — Generating the Excel Report</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 Exercise — Working with Database Results</span></a>
+  <a href="../exercises/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 Exercise — Oracle Connection</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 Exercise — Calling the Education Data API</span></a>
+  <a href="../exercises/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 Exercise — Working with Database Results</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 Exercise — Working with API Results</span></a>
+  <a href="../exercises/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 Exercise — Calling the Education Data API</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../exercises/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 Exercise — Working with API Results</span></a>
   </div>
 </li>
       </ul>
@@ -513,18 +523,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#setting-up" id="toc-setting-up" class="nav-link" data-scroll-target="#setting-up">Setting Up</a></li>
-  <li><a href="#the-three-sources" id="toc-the-three-sources" class="nav-link" data-scroll-target="#the-three-sources">The Three Sources</a></li>
-  <li><a href="#building-transform.py-v1" id="toc-building-transform.py-v1" class="nav-link" data-scroll-target="#building-transform.py-v1">Building transform.py v1</a>
+  <li><a href="#what-is-pandas" id="toc-what-is-pandas" class="nav-link" data-scroll-target="#what-is-pandas">What Is pandas?</a></li>
+  <li><a href="#loading-a-csv" id="toc-loading-a-csv" class="nav-link" data-scroll-target="#loading-a-csv">Loading a CSV</a>
   <ul class="collapse">
-  <li><a href="#starting-the-file" id="toc-starting-the-file" class="nav-link" data-scroll-target="#starting-the-file">Starting the file</a></li>
-  <li><a href="#get_students-deduplication" id="toc-get_students-deduplication" class="nav-link" data-scroll-target="#get_students-deduplication">get_students() — Deduplication</a></li>
-  <li><a href="#normalizing-the-join-keys" id="toc-normalizing-the-join-keys" class="nav-link" data-scroll-target="#normalizing-the-join-keys">Normalizing the join keys</a></li>
-  <li><a href="#merge_data-the-three-way-merge" id="toc-merge_data-the-three-way-merge" class="nav-link" data-scroll-target="#merge_data-the-three-way-merge">merge_data() — The three-way merge</a></li>
-  <li><a href="#testing-with-a-main-block" id="toc-testing-with-a-main-block" class="nav-link" data-scroll-target="#testing-with-a-main-block">Testing with a <strong>main</strong> block</a></li>
-  <li><a href="#inspecting-unmatched-rows" id="toc-inspecting-unmatched-rows" class="nav-link" data-scroll-target="#inspecting-unmatched-rows">Inspecting unmatched rows</a></li>
-  <li><a href="#saving-the-merged-result-to-csv" id="toc-saving-the-merged-result-to-csv" class="nav-link" data-scroll-target="#saving-the-merged-result-to-csv">Saving the merged result to CSV</a></li>
+  <li><a href="#controlling-column-data-types" id="toc-controlling-column-data-types" class="nav-link" data-scroll-target="#controlling-column-data-types">Controlling column data types</a></li>
   </ul></li>
-  <li><a href="#transform.py-v1-complete-file" id="toc-transform.py-v1-complete-file" class="nav-link" data-scroll-target="#transform.py-v1-complete-file">transform.py v1 — Complete File</a></li>
+  <li><a href="#inspecting-a-dataset" id="toc-inspecting-a-dataset" class="nav-link" data-scroll-target="#inspecting-a-dataset">Inspecting a Dataset</a>
+  <ul class="collapse">
+  <li><a href="#head" id="toc-head" class="nav-link" data-scroll-target="#head"><code>.head()</code></a></li>
+  <li><a href="#info" id="toc-info" class="nav-link" data-scroll-target="#info"><code>.info()</code></a></li>
+  <li><a href="#describe" id="toc-describe" class="nav-link" data-scroll-target="#describe"><code>.describe()</code></a></li>
+  </ul></li>
+  <li><a href="#selecting-columns" id="toc-selecting-columns" class="nav-link" data-scroll-target="#selecting-columns">Selecting Columns</a></li>
+  <li><a href="#filtering-rows" id="toc-filtering-rows" class="nav-link" data-scroll-target="#filtering-rows">Filtering Rows</a></li>
+  <li><a href="#writing-a-function" id="toc-writing-a-function" class="nav-link" data-scroll-target="#writing-a-function">Writing a Function</a>
+  <ul class="collapse">
+  <li><a href="#why-functions" id="toc-why-functions" class="nav-link" data-scroll-target="#why-functions">Why functions?</a></li>
+  </ul></li>
+  <li><a href="#the-other-two-sources" id="toc-the-other-two-sources" class="nav-link" data-scroll-target="#the-other-two-sources">The Other Two Sources</a>
+  <ul class="collapse">
+  <li><a href="#enrollment.csv" id="toc-enrollment.csv" class="nav-link" data-scroll-target="#enrollment.csv">enrollment.csv</a></li>
+  <li><a href="#schools.csv" id="toc-schools.csv" class="nav-link" data-scroll-target="#schools.csv">schools.csv</a></li>
+  <li><a href="#why-these-files-are-here" id="toc-why-these-files-are-here" class="nav-link" data-scroll-target="#why-these-files-are-here">Why these files are here</a></li>
+  </ul></li>
   <li><a href="#practice-exercise" id="toc-practice-exercise" class="nav-link" data-scroll-target="#practice-exercise">Practice Exercise</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
   </ul>
@@ -534,9 +555,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/session_03.html">Phase 1: Working with Provided Data</a></li><li class="breadcrumb-item"><a href="../modules/session_04.html"><span class="chapter-title">Session 4 — Merging the Three Sources</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/session_03.html">Phase 1: Working with Provided Data</a></li><li class="breadcrumb-item"><a href="../modules/session_04.html"><span class="chapter-title">Session 4 — Pandas and Working with Data</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Session 4 — Merging the Three Sources</span></h1>
+<h1 class="title"><span class="chapter-title">Session 4 — Pandas and Working with Data</span></h1>
 </div>
 
 
@@ -555,244 +576,162 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Three CSV files are already in <code>student_report/data/</code>: enrollment data, a CCD school directory, and a survey linking students to the middle schools they attended. This session builds <code>transform.py</code> v1 — two functions that merge all three sources into a single DataFrame with one row per student, enriched with middle school name, city, ZIP, and enrollment size.</p>
-<p>Reference: Prior session — Session 3</p>
-<hr>
+<p>Every session from here on involves loading, inspecting, and transforming data. This session introduces pandas — the Python library that makes all of that possible — using the survey CSV that sits at the heart of the workshop pipeline. You will learn the four operations you will use in every session that follows: loading a file, inspecting what is in it, selecting columns, and filtering rows. You will also write your first reusable function.</p>
 </section>
 <section id="setting-up" class="level2">
 <h2 class="anchored" data-anchor-id="setting-up">Setting Up</h2>
-<p>Open VS Code and activate your conda environment in the terminal.</p>
-<p>In the Explorer pane, right-click the <code>student_report/</code> folder and choose <strong>New File</strong>. Name it <code>transform.py</code>.</p>
-<p>In the terminal:</p>
-<pre><code>conda activate student-report</code></pre>
+<p>Open VS Code, activate your conda environment in the terminal, and open or clear <code>scratch.py</code> in the repo root. You will build the code-along script in that file, running it after each addition.</p>
+<p>In Git Bash:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate student-report</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Confirm <code>(student-report)</code> appears in your terminal prompt before continuing.</p>
-<blockquote class="blockquote">
-<p><strong>No VPN or prior sessions required.</strong> All three CSV files are pre-committed to <code>student_report/data/</code> — no setup steps needed beyond activating the conda environment.</p>
-</blockquote>
-<hr>
 </section>
-<section id="the-three-sources" class="level2">
-<h2 class="anchored" data-anchor-id="the-three-sources">The Three Sources</h2>
-<p>Before writing any code, it helps to know exactly what each dataset contributes and how they connect.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Source</th>
-<th>File</th>
-<th>Join key</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Enrollment</td>
-<td><code>student_report/data/enrollment.csv</code></td>
-<td><code>student_id</code> — matches survey</td>
-</tr>
-<tr class="even">
-<td>Survey</td>
-<td><code>student_report/data/survey_middle_schools.csv</code></td>
-<td><code>student_id</code> (left) → <code>ncessch</code> (right)</td>
-</tr>
-<tr class="odd">
-<td>CCD school directory</td>
-<td><code>student_report/data/schools.csv</code></td>
-<td><code>ncessch</code> — matches survey</td>
-</tr>
-</tbody>
-</table>
-<p>The survey CSV is the bridge: it holds each student’s <code>student_id</code> and the <code>ncessch</code> (NCES school ID) of the middle school they attended. A student appears in the enrollment data even if they did not fill out the survey — in that case, no school information will be available and the merge will produce <code>NaN</code> values for all school columns.</p>
-<p>The enrollment and school directory CSVs represent data that would normally require a database query and an API call to obtain. For now they are provided as static files; Sessions 8–11 build the code that generates them automatically.</p>
-<hr>
+<section id="what-is-pandas" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-pandas">What Is pandas?</h2>
+<p>pandas is a Python library for working with tabular data. When you load a CSV, pandas gives you a <strong>DataFrame</strong> — a table with named columns and numbered rows, similar to an Excel worksheet.</p>
+<p>A single column of a DataFrame is called a <strong>Series</strong> — a list of values with an index. You will mostly work with DataFrames, but understanding the distinction matters because many operations return a Series and some expect one.</p>
+<pre><code>DataFrame                        Series (one column)
+┌─────────────┬──────────────┐   ┌──────────────┐
+│ student_id  │ school_name  │   │ school_name  │
+├─────────────┼──────────────┤   ├──────────────┤
+│ 124         │ Bloomfield   │   │ Bloomfield   │
+│ 353         │ Bloomfield   │   │ Bloomfield   │
+│ 157         │ Carteret     │   │ Carteret     │
+└─────────────┴──────────────┘   └──────────────┘</code></pre>
 </section>
-<section id="building-transform.py-v1" class="level2">
-<h2 class="anchored" data-anchor-id="building-transform.py-v1">Building transform.py v1</h2>
-<section id="starting-the-file" class="level3">
-<h3 class="anchored" data-anchor-id="starting-the-file">Starting the file</h3>
-<p>Create <code>student_report/transform.py</code> and add the import:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>That is the only import this module needs.</p>
-</section>
-<section id="get_students-deduplication" class="level3">
-<h3 class="anchored" data-anchor-id="get_students-deduplication">get_students() — Deduplication</h3>
-<p>The enrollment DataFrame has one row per student × course enrollment. A student who took three courses appears three times. Before merging, we need exactly one row per student.</p>
-<p>Add <code>get_students()</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_students(enrollment_df):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        enrollment_df[[<span class="st">'student_id'</span>, <span class="st">'first_name'</span>, <span class="st">'last_name'</span>, <span class="st">'zip'</span>, <span class="st">'city'</span>, <span class="st">'state'</span>]]</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        .drop_duplicates(subset<span class="op">=</span>[<span class="st">'student_id'</span>])</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        .copy()</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Three things happen here:</p>
-<ol type="1">
-<li><strong>Column selection</strong> — <code>enrollment_df[['student_id', ...]]</code> keeps only the six columns the pipeline needs, dropping <code>course_name</code>, <code>cost</code>, <code>enroll_date</code>, and <code>final_grade</code>. Those are per-enrollment details, not per-student details.</li>
-<li><strong>Deduplication</strong> — <code>.drop_duplicates(subset=['student_id'])</code> keeps the first row for each <code>student_id</code> and discards the rest. The six columns are all student-level data (the same value on every row for a given student), so it does not matter which enrollment row is kept.</li>
-<li><strong>Copy</strong> — <code>.copy()</code> returns an independent DataFrame so that later operations do not silently modify the original.</li>
-</ol>
-</section>
-<section id="normalizing-the-join-keys" class="level3">
-<h3 class="anchored" data-anchor-id="normalizing-the-join-keys">Normalizing the join keys</h3>
-<p>Before merging, the join key columns need to be in a consistent format. Two problems come from the API data in <code>schools.csv</code>:</p>
-<ul>
-<li><code>ncessch</code> was returned as a float: <code>360007702472.0</code>. The survey CSV stores it without the decimal: <code>360007702472</code>. These will not match unless we normalize both sides.</li>
-<li><code>zip_mailing</code> was returned as a float: <code>10001.0</code>. ZIP codes are five-digit strings and need zero-padding for short codes.</li>
-</ul>
-<p>The enrollment <code>zip</code> column comes from Oracle as a string but may also need zero-padding.</p>
-<p>The normalization pattern for a float-to-clean-string conversion is:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>column.astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<ul>
-<li><code>.astype(str)</code> converts <code>360007702472.0</code> → <code>'360007702472.0'</code></li>
-<li><code>.str.split('.')</code> splits on the decimal point → <code>['360007702472', '0']</code></li>
-<li><code>.str[0]</code> takes the first part → <code>'360007702472'</code></li>
-</ul>
-<p>For ZIP codes, append <code>.str.zfill(5)</code> to pad short codes with leading zeros: <code>'7102'</code> → <code>'07102'</code>.</p>
-</section>
-<section id="merge_data-the-three-way-merge" class="level3">
-<h3 class="anchored" data-anchor-id="merge_data-the-three-way-merge">merge_data() — The three-way merge</h3>
-<p>Add <code>merge_data()</code> below <code>get_students()</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> merge_data(students_df, survey_df, school_df):</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    students_df <span class="op">=</span> students_df.copy()</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    survey_df <span class="op">=</span> survey_df.copy()</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    school_df <span class="op">=</span> school_df.copy()</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    students_df[<span class="st">'zip'</span>] <span class="op">=</span> students_df[<span class="st">'zip'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">5</span>)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    school_df[<span class="st">'zip_mailing'</span>] <span class="op">=</span> (</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        school_df[<span class="st">'zip_mailing'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>].<span class="bu">str</span>.zfill(<span class="dv">5</span>)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    survey_df[<span class="st">'ncessch'</span>] <span class="op">=</span> survey_df[<span class="st">'ncessch'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    school_df[<span class="st">'ncessch'</span>] <span class="op">=</span> school_df[<span class="st">'ncessch'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> students_df.merge(survey_df, on<span class="op">=</span><span class="st">'student_id'</span>, how<span class="op">=</span><span class="st">'left'</span>)</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> merged.merge(school_df, on<span class="op">=</span><span class="st">'ncessch'</span>, how<span class="op">=</span><span class="st">'left'</span>)</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> merged</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Walk through each section:</p>
-<p><strong>Defensive copies</strong> — The three <code>.copy()</code> calls at the top prevent the normalization steps from modifying the DataFrames that were passed in. This makes the function safe to call multiple times or from a test.</p>
-<p><strong>Normalization</strong> — The four assignment lines normalize the join key columns as described above. The normalization happens before the merge so both sides have matching formats.</p>
-<p><strong>First merge — students → survey</strong> — <code>students_df.merge(survey_df, on='student_id', how='left')</code> joins on <code>student_id</code>. <code>how='left'</code> keeps every row from <code>students_df</code>. Students who have a survey response get <code>middle_school_name</code> and <code>ncessch</code> from the survey. Students with no survey response get <code>NaN</code> in those columns.</p>
-<p><strong>Second merge — result → CCD</strong> — <code>merged.merge(school_df, on='ncessch', how='left')</code> joins the result of the first merge to the CCD school directory on <code>ncessch</code>. Students who matched the survey and whose <code>ncessch</code> exists in the CCD data get all the school columns (<code>school_name</code>, <code>city_location</code>, <code>zip_mailing</code>, <code>enrollment</code>, etc.). Students with no survey match — and therefore no <code>ncessch</code> — still get <code>NaN</code> for all school columns.</p>
-<p>The final result is one row per student, with school data where available.</p>
-</section>
-<section id="testing-with-a-main-block" class="level3">
-<h3 class="anchored" data-anchor-id="testing-with-a-main-block">Testing with a <strong>main</strong> block</h3>
-<p>Add a <code>if __name__ == '__main__':</code> block to load the CSV files from prior sessions and test the two functions:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">'__main__'</span>:</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    enrollment_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/enrollment.csv'</span>)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    survey_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/survey_middle_schools.csv'</span>)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    school_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/schools.csv'</span>)</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    students <span class="op">=</span> get_students(enrollment_df)</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Students (deduplicated): </span><span class="sc">{</span><span class="bu">len</span>(students)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> merge_data(students, survey_df, school_df)</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Merged rows: </span><span class="sc">{</span><span class="bu">len</span>(merged)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(merged.head())</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    merged.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="loading-a-csv" class="level2">
+<h2 class="anchored" data-anchor-id="loading-a-csv">Loading a CSV</h2>
+<p>Add this to <code>scratch.py</code> and run it:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/survey_middle_schools.csv'</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Run from the repo root:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> student_report/transform.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You should see the deduplicated student count followed by the merged row count — both numbers should be equal (one row per student). The <code>.info()</code> output will show <code>NaN</code> counts for the school columns, indicating students with no survey match.</p>
-</section>
-<section id="inspecting-unmatched-rows" class="level3">
-<h3 class="anchored" data-anchor-id="inspecting-unmatched-rows">Inspecting unmatched rows</h3>
-<p>Add a few lines to the <code>__main__</code> block to look at students without a survey match:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">'__main__'</span>:</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    enrollment_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/enrollment.csv'</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    survey_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/survey_middle_schools.csv'</span>)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    school_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/schools.csv'</span>)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    students <span class="op">=</span> get_students(enrollment_df)</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Students (deduplicated): </span><span class="sc">{</span><span class="bu">len</span>(students)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> merge_data(students, survey_df, school_df)</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Merged rows: </span><span class="sc">{</span><span class="bu">len</span>(merged)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(merged.head())</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    merged.info()</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    unmatched <span class="op">=</span> merged[merged[<span class="st">'middle_school_name'</span>].isna()]</span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Students without a survey match: </span><span class="sc">{</span><span class="bu">len</span>(unmatched)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(unmatched[[<span class="st">'student_id'</span>, <span class="st">'first_name'</span>, <span class="st">'last_name'</span>, <span class="st">'city'</span>, <span class="st">'state'</span>]].head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>merged['middle_school_name'].isna()</code> is <code>True</code> for every row where the survey join found no match. These are students who either did not complete the survey or whose record was not in the survey data. The count and a sample of names give a sense of how much school data is missing before the report is produced.</p>
-</section>
-<section id="saving-the-merged-result-to-csv" class="level3">
-<h3 class="anchored" data-anchor-id="saving-the-merged-result-to-csv">Saving the merged result to CSV</h3>
-<p>Add a <code>to_csv()</code> call to write the merged DataFrame to a file:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">'__main__'</span>:</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    enrollment_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/enrollment.csv'</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    survey_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/survey_middle_schools.csv'</span>)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    school_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/schools.csv'</span>)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    students <span class="op">=</span> get_students(enrollment_df)</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> merge_data(students, survey_df, school_df)</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Students: </span><span class="sc">{</span><span class="bu">len</span>(students)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Merged rows: </span><span class="sc">{</span><span class="bu">len</span>(merged)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    unmatched <span class="op">=</span> merged[merged[<span class="st">'middle_school_name'</span>].isna()]</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Students without a survey match: </span><span class="sc">{</span><span class="bu">len</span>(unmatched)<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>    merged.to_csv(<span class="st">'student_report/reports/merged.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Saved merged.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Run again and open <code>student_report/reports/merged.csv</code>. Each row is one student. The school columns are populated where a survey match and a CCD match both exist, and <code>NaN</code> otherwise.</p>
-<hr>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scratch.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You should see a table with three columns — <code>student_id</code>, <code>middle_school_name</code>, and <code>ncessch</code> — and several rows.</p>
+<blockquote class="blockquote">
+<p><strong>Always run scripts from the repo root.</strong> If you run from a different directory, relative file paths like <code>student_report/data/...</code> will not resolve.</p>
+</blockquote>
+<section id="controlling-column-data-types" class="level3">
+<h3 class="anchored" data-anchor-id="controlling-column-data-types">Controlling column data types</h3>
+<p>By default, pandas infers each column’s type from its values. Run <code>.info()</code> to see what it chose:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.info())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Notice that <code>ncessch</code> is loaded as <code>int64</code> — a number. That looks fine until you compare it to another dataset where the same ID is stored as a string like <code>"340183001982"</code>. Type mismatches silently produce empty merges.</p>
+<p>Fix this at load time by specifying <code>dtype</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'student_report/data/survey_middle_schools.csv'</span>,</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    dtype<span class="op">=</span>{<span class="st">'ncessch'</span>: <span class="bu">str</span>}</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Run <code>.info()</code> again — <code>ncessch</code> is now <code>object</code> (pandas’ label for strings). This is exactly how <code>main.py</code> loads this file. Any time you load a file with an ID column that is all digits, force it to string.</p>
 </section>
 </section>
-<section id="transform.py-v1-complete-file" class="level2">
-<h2 class="anchored" data-anchor-id="transform.py-v1-complete-file">transform.py v1 — Complete File</h2>
-<p>Remove the <code>if __name__ == '__main__':</code> block. The final <code>transform.py</code> v1 defines one import and two functions:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_students(enrollment_df):</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>        enrollment_df[[<span class="st">'student_id'</span>, <span class="st">'first_name'</span>, <span class="st">'last_name'</span>, <span class="st">'zip'</span>, <span class="st">'city'</span>, <span class="st">'state'</span>]]</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        .drop_duplicates(subset<span class="op">=</span>[<span class="st">'student_id'</span>])</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>        .copy()</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> merge_data(students_df, survey_df, school_df):</span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    students_df <span class="op">=</span> students_df.copy()</span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    survey_df <span class="op">=</span> survey_df.copy()</span>
-<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    school_df <span class="op">=</span> school_df.copy()</span>
-<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>    students_df[<span class="st">'zip'</span>] <span class="op">=</span> students_df[<span class="st">'zip'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">5</span>)</span>
-<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    school_df[<span class="st">'zip_mailing'</span>] <span class="op">=</span> (</span>
-<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>        school_df[<span class="st">'zip_mailing'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>].<span class="bu">str</span>.zfill(<span class="dv">5</span>)</span>
-<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    survey_df[<span class="st">'ncessch'</span>] <span class="op">=</span> survey_df[<span class="st">'ncessch'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span>
-<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>    school_df[<span class="st">'ncessch'</span>] <span class="op">=</span> school_df[<span class="st">'ncessch'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span>
-<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> students_df.merge(survey_df, on<span class="op">=</span><span class="st">'student_id'</span>, how<span class="op">=</span><span class="st">'left'</span>)</span>
-<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> merged.merge(school_df, on<span class="op">=</span><span class="st">'ncessch'</span>, how<span class="op">=</span><span class="st">'left'</span>)</span>
-<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> merged</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>main.py</code> (Session 12) will call these functions by importing <code>transform.py</code>. There is no top-level code after the import, so the import is safe — no file I/O or computation happens until the functions are explicitly called.</p>
-<p>In Session 5, we add three aggregation functions to <code>transform.py</code>: summaries by school, by ZIP, and by school size — plus <code>pd.cut()</code> to bucket school enrollment into Small / Medium / Large.</p>
-<hr>
+<section id="inspecting-a-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="inspecting-a-dataset">Inspecting a Dataset</h2>
+<p>Three methods give you a quick picture of any DataFrame.</p>
+<section id="head" class="level3">
+<h3 class="anchored" data-anchor-id="head"><code>.head()</code></h3>
+<p>Returns the first 5 rows (or however many you pass):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head())</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Use this first every time you load a new file.</p>
+</section>
+<section id="info" class="level3">
+<h3 class="anchored" data-anchor-id="info"><code>.info()</code></h3>
+<p>Prints column names, non-null counts, and data types:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The non-null count is important: if a column has fewer non-null values than total rows, some values are missing (<code>NaN</code>). You will deal with missing data in the merge step.</p>
+</section>
+<section id="describe" class="level3">
+<h3 class="anchored" data-anchor-id="describe"><code>.describe()</code></h3>
+<p>Computes summary statistics for numeric columns:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.describe())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For this dataset, only <code>student_id</code> is numeric, so you will see its count, mean, min, and max. On richer datasets, <code>.describe()</code> immediately shows whether values are in a plausible range.</p>
+</section>
+</section>
+<section id="selecting-columns" class="level2">
+<h2 class="anchored" data-anchor-id="selecting-columns">Selecting Columns</h2>
+<p>Select one column using bracket notation — this returns a <strong>Series</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[<span class="st">'middle_school_name'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Select multiple columns by passing a list — this returns a <strong>DataFrame</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[[<span class="st">'student_id'</span>, <span class="st">'middle_school_name'</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Note the double brackets: the outer <code>[ ]</code> is the selection operator; the inner <code>[ ]</code> is a Python list of column names.</p>
+<p>You can assign the result to a new variable:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>names_only <span class="op">=</span> df[[<span class="st">'student_id'</span>, <span class="st">'middle_school_name'</span>]]</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(names_only.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Column selection is how every module in this pipeline trims down a wide DataFrame to only the columns it actually needs. In <code>transform.py</code>, <code>get_students()</code> selects six columns from the full Oracle enrollment result before doing anything else with the data.</p>
+</section>
+<section id="filtering-rows" class="level2">
+<h2 class="anchored" data-anchor-id="filtering-rows">Filtering Rows</h2>
+<p>Filter rows by writing a condition inside <code>[ ]</code>. The condition must compare a column to a value and return <code>True</code> or <code>False</code> for each row.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>target_school <span class="op">=</span> df[df[<span class="st">'middle_school_name'</span>] <span class="op">==</span> <span class="st">'Bloomfield Middle School'</span>]</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(target_school)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>pandas evaluates <code>df['middle_school_name'] == 'Bloomfield Middle School'</code> row by row, producing a column of <code>True</code>/<code>False</code> values called a <strong>boolean mask</strong>. Placing that mask inside <code>df[ ]</code> keeps only the rows where the condition is <code>True</code>.</p>
+<p>Combine conditions with <code>&amp;</code> (and) or <code>|</code> (or). Wrap each condition in parentheses:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>nj_schools <span class="op">=</span> df[</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    (df[<span class="st">'middle_school_name'</span>] <span class="op">==</span> <span class="st">'Bloomfield Middle School'</span>) <span class="op">|</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    (df[<span class="st">'middle_school_name'</span>] <span class="op">==</span> <span class="st">'Carteret Middle School'</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nj_schools)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="writing-a-function" class="level2">
+<h2 class="anchored" data-anchor-id="writing-a-function">Writing a Function</h2>
+<p>So far, every operation has been written as a standalone line. When you need to repeat the same steps — or when a block of code has a clear single purpose — wrap it in a function.</p>
+<p>Here is a function that takes the survey DataFrame and returns a count of students per school, sorted from most to least:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_by_school(df):</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    counts <span class="op">=</span> df.groupby(<span class="st">'middle_school_name'</span>).size().reset_index(name<span class="op">=</span><span class="st">'student_count'</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> counts.sort_values(<span class="st">'student_count'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Add this to <code>scratch.py</code> and call it:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> count_by_school(df)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result.head(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This is a simplified preview of <code>summarize_top_schools()</code> in <code>transform.py</code>, which you will build in Session 6. The structure is the same: a function accepts a DataFrame, performs a transformation, and returns a new DataFrame.</p>
+<section id="why-functions" class="level3">
+<h3 class="anchored" data-anchor-id="why-functions">Why functions?</h3>
+<ul>
+<li><strong>Reuse.</strong> Call <code>count_by_school(df)</code> anywhere instead of rewriting four lines every time.</li>
+<li><strong>Naming.</strong> <code>count_by_school(df)</code> says exactly what it does. Four anonymous lines do not.</li>
+<li><strong>Testability.</strong> In Session 14, you will write unit tests that call functions directly and check their output.</li>
+</ul>
+<p>A good rule of thumb: if a block of code has a name you can give it in plain English, it belongs in a function.</p>
+</section>
+</section>
+<section id="the-other-two-sources" class="level2">
+<h2 class="anchored" data-anchor-id="the-other-two-sources">The Other Two Sources</h2>
+<p>The pipeline uses three CSV files in total. You just explored the survey CSV. The other two are also in <code>student_report/data/</code>.</p>
+<section id="enrollment.csv" class="level3">
+<h3 class="anchored" data-anchor-id="enrollment.csv">enrollment.csv</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>enrollment_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/enrollment.csv'</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(enrollment_df.head())</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>enrollment_df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A few things to notice: - Column names are lowercase — a normalization step that <code>db.py</code> applies when it queries Oracle. - There are more rows than students. A student enrolled in three courses appears three times — one row per enrollment. Session 5 will deduplicate this to one row per student before merging. - <code>student_id</code> is the key that links this file to the survey.</p>
+<p>This file was exported from the Oracle training database. In Sessions 9–10 you will write the Python code that generates it automatically.</p>
+</section>
+<section id="schools.csv" class="level3">
+<h3 class="anchored" data-anchor-id="schools.csv">schools.csv</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>school_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/schools.csv'</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(school_df.head())</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>school_df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A few things to notice: - <code>ncessch</code> and <code>zip_mailing</code> appear as floats — <code>360007702472.0</code>, <code>10001.0</code>. These are IDs that should be strings. This is a quirk of how the Urban Institute API returns them; <code>transform.py</code> normalizes them in Session 5 before merging. - <code>school_level</code> encodes the school type: <code>2.0</code> means middle school. - There are thousands of rows — every NY and NJ school in the 2019 CCD directory.</p>
+<p>This file was downloaded from the Urban Institute Education Data Portal. In Sessions 11–12 you will write the Python code that generates it automatically.</p>
+</section>
+<section id="why-these-files-are-here" class="level3">
+<h3 class="anchored" data-anchor-id="why-these-files-are-here">Why these files are here</h3>
+<p>In Phase 1, <code>enrollment.csv</code> and <code>schools.csv</code> represent data that someone on your team collected by hand before the workshop — the same steps in the old workflow that together took 30–50 minutes. You will work with them directly. Phase 2 (Sessions 9–12) builds the automation that eliminates those manual steps entirely.</p>
+</section>
 </section>
 <section id="practice-exercise" class="level2">
 <h2 class="anchored" data-anchor-id="practice-exercise">Practice Exercise</h2>
 <blockquote class="blockquote">
 <p>Optional enrichment — complete during the session if time allows, or finish independently on your fork.</p>
 </blockquote>
-<p>The starter script is at <a href="../exercises/session_04_exercise.py"><code>exercises/session_04_exercise.py</code></a>. It contains instructions and fill-in-the-blank placeholders. If you get stuck, the completed version is at <a href="../exercises/session_04_answer.py"><code>exercises/session_04_answer.py</code></a>.</p>
+<p>The starter script is at <a href="../exercises/session_04_exercise.py"><code>exercises/session_04_exercise.py</code></a>. It contains instructions and fill-in-the-blank placeholders. Every exercise in this workshop uses the same convention: a <code># TODO:</code> comment marks each blank. Replace <code>"___"</code> (with the quotes) with a string value, and replace a bare <code>___</code> (no quotes) with a variable name or expression. If you get stuck, the completed version is at <a href="../exercises/session_04_answer.py"><code>exercises/session_04_answer.py</code></a>.</p>
 <p>Run from the repo root:</p>
 <pre><code>python exercises/session_04_exercise.py</code></pre>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
 <ul>
-<li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html">pandas — DataFrame.merge</a></li>
-<li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html">pandas — DataFrame.drop_duplicates</a></li>
-<li><a href="https://pandas.pydata.org/docs/user_guide/missing_data.html">pandas — Working with missing data</a></li>
-<li><a href="https://pandas.pydata.org/docs/user_guide/text.html">pandas — String methods (.str accessor)</a></li>
+<li><a href="https://pandas.pydata.org/docs/">pandas documentation</a></li>
+<li><a href="https://www.datacamp.com/cheat-sheet/pandas-cheat-sheet-for-data-science-in-python">pandas cheat sheet (DataCamp)</a></li>
+<li><a href="https://pandas.pydata.org/docs/user_guide/10min.html">10 minutes to pandas</a></li>
 </ul>
 
 
@@ -1214,13 +1153,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../modules/session_03.html" class="pagination-link" aria-label="Session 3 — Pandas and Working with Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Session 3 — Pandas and Working with Data</span></span>
+      <a href="../modules/session_03.html" class="pagination-link" aria-label="Before You Begin — Python Foundations">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Before You Begin — Python Foundations</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../modules/session_05.html" class="pagination-link" aria-label="Session 5 — Aggregations and Summary Statistics">
-        <span class="nav-page-text"><span class="chapter-title">Session 5 — Aggregations and Summary Statistics</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../modules/session_05.html" class="pagination-link" aria-label="Session 5 — Merging the Three Sources">
+        <span class="nav-page-text"><span class="chapter-title">Session 5 — Merging the Three Sources</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

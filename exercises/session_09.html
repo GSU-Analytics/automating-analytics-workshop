@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Session 9 Exercise — Working with Database Results – Automating Data Analytics with Python</title>
+<title>Session 9 Exercise — Oracle Connection – Automating Data Analytics with Python</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -251,7 +251,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../exercises/session_03.html">Exercises</a></li><li class="breadcrumb-item"><a href="../exercises/session_09.html"><span class="chapter-title">Session 9 Exercise — Working with Database Results</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../exercises/session_03.html">Exercises</a></li><li class="breadcrumb-item"><a href="../exercises/session_09.html"><span class="chapter-title">Session 9 Exercise — Oracle Connection</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -322,27 +322,32 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 3 — Pandas and Working with Data</span></a>
+  <a href="../modules/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before You Begin — Python Foundations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 — Merging the Three Sources</span></a>
+  <a href="../modules/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 — Pandas and Working with Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 — Aggregations and Summary Statistics</span></a>
+  <a href="../modules/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 — Merging the Three Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 — Creating Visualizations</span></a>
+  <a href="../modules/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 — Aggregations and Summary Statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 — Generating the Excel Report</span></a>
+  <a href="../modules/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 — Creating Visualizations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 — Generating the Excel Report</span></a>
   </div>
 </li>
       </ul>
@@ -358,22 +363,22 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 — Connecting to the Database</span></a>
+  <a href="../modules/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 — Connecting to the Database</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 — Working with Database Results</span></a>
+  <a href="../modules/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 — Working with Database Results</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 — Calling a Web API</span></a>
+  <a href="../modules/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 — Calling a Web API</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 — Working with API Results</span></a>
+  <a href="../modules/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 — Working with API Results</span></a>
   </div>
 </li>
       </ul>
@@ -389,7 +394,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 — The Automated Pipeline</span></a>
+  <a href="../modules/session_13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 13 — The Automated Pipeline</span></a>
   </div>
 </li>
       </ul>
@@ -405,7 +410,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 13 — Introduction to Unit Testing <em>(Optional)</em></span></a>
+  <a href="../modules/session_14.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 14 — Introduction to Unit Testing <em>(Optional)</em></span></a>
   </div>
 </li>
       </ul>
@@ -421,47 +426,52 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 3 Exercise — Pandas Basics</span></a>
+  <a href="../exercises/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before You Begin Exercise — Python Foundations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 Exercise — Merging Three Sources</span></a>
+  <a href="../exercises/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 Exercise — Pandas Basics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 Exercise — Aggregations and Summary Statistics</span></a>
+  <a href="../exercises/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 Exercise — Merging Three Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 Exercise — Creating Visualizations</span></a>
+  <a href="../exercises/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 Exercise — Aggregations and Summary Statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 Exercise — Generating the Excel Report</span></a>
+  <a href="../exercises/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 Exercise — Creating Visualizations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 Exercise — Oracle Connection</span></a>
+  <a href="../exercises/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 Exercise — Generating the Excel Report</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_09.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Session 9 Exercise — Working with Database Results</span></a>
+  <a href="../exercises/session_09.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Session 9 Exercise — Oracle Connection</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 Exercise — Calling the Education Data API</span></a>
+  <a href="../exercises/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 Exercise — Working with Database Results</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 Exercise — Working with API Results</span></a>
+  <a href="../exercises/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 Exercise — Calling the Education Data API</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../exercises/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 Exercise — Working with API Results</span></a>
   </div>
 </li>
       </ul>
@@ -485,9 +495,9 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../exercises/session_03.html">Exercises</a></li><li class="breadcrumb-item"><a href="../exercises/session_09.html"><span class="chapter-title">Session 9 Exercise — Working with Database Results</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../exercises/session_03.html">Exercises</a></li><li class="breadcrumb-item"><a href="../exercises/session_09.html"><span class="chapter-title">Session 9 Exercise — Oracle Connection</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Session 9 Exercise — Working with Database Results</span></h1>
+<h1 class="title"><span class="chapter-title">Session 9 Exercise — Oracle Connection</span></h1>
 </div>
 
 
@@ -513,11 +523,8 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li>Load <code>student_report/.env</code></li>
 <li>Connect to Oracle using <code>LightOracleConnection</code></li>
-<li>Query all rows from the <code>course</code> table</li>
-<li>Normalize column names to lowercase</li>
-<li>Filter to courses with <code>cost &gt; 1000</code></li>
-<li>Save the filtered result to <code>exercises/data/courses_over_1000.csv</code> (no index)</li>
-<li>Print how many courses remain after filtering</li>
+<li>Query the first 10 rows of the <code>zipcode</code> table</li>
+<li>Print the result</li>
 </ol>
 </section>
 <section id="starter-script" class="level2">
@@ -945,13 +952,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../exercises/session_08.html" class="pagination-link" aria-label="Session 8 Exercise — Oracle Connection">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Session 8 Exercise — Oracle Connection</span></span>
+      <a href="../exercises/session_08.html" class="pagination-link" aria-label="Session 8 Exercise — Generating the Excel Report">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Session 8 Exercise — Generating the Excel Report</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../exercises/session_10.html" class="pagination-link" aria-label="Session 10 Exercise — Calling the Education Data API">
-        <span class="nav-page-text"><span class="chapter-title">Session 10 Exercise — Calling the Education Data API</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../exercises/session_10.html" class="pagination-link" aria-label="Session 10 Exercise — Working with Database Results">
+        <span class="nav-page-text"><span class="chapter-title">Session 10 Exercise — Working with Database Results</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

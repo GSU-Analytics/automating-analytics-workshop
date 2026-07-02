@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Session 6 — Creating Visualizations – Automating Data Analytics with Python</title>
+<title>Session 6 — Aggregations and Summary Statistics – Automating Data Analytics with Python</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -286,7 +286,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/session_03.html">Phase 1: Working with Provided Data</a></li><li class="breadcrumb-item"><a href="../modules/session_06.html"><span class="chapter-title">Session 6 — Creating Visualizations</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/session_03.html">Phase 1: Working with Provided Data</a></li><li class="breadcrumb-item"><a href="../modules/session_06.html"><span class="chapter-title">Session 6 — Aggregations and Summary Statistics</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -357,27 +357,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 3 — Pandas and Working with Data</span></a>
+  <a href="../modules/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before You Begin — Python Foundations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 — Merging the Three Sources</span></a>
+  <a href="../modules/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 — Pandas and Working with Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 — Aggregations and Summary Statistics</span></a>
+  <a href="../modules/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 — Merging the Three Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_06.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Session 6 — Creating Visualizations</span></a>
+  <a href="../modules/session_06.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Session 6 — Aggregations and Summary Statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 — Generating the Excel Report</span></a>
+  <a href="../modules/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 — Creating Visualizations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 — Generating the Excel Report</span></a>
   </div>
 </li>
       </ul>
@@ -393,22 +398,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 — Connecting to the Database</span></a>
+  <a href="../modules/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 — Connecting to the Database</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 — Working with Database Results</span></a>
+  <a href="../modules/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 — Working with Database Results</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 — Calling a Web API</span></a>
+  <a href="../modules/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 — Calling a Web API</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 — Working with API Results</span></a>
+  <a href="../modules/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 — Working with API Results</span></a>
   </div>
 </li>
       </ul>
@@ -424,7 +429,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 — The Automated Pipeline</span></a>
+  <a href="../modules/session_13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 13 — The Automated Pipeline</span></a>
   </div>
 </li>
       </ul>
@@ -440,7 +445,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 13 — Introduction to Unit Testing <em>(Optional)</em></span></a>
+  <a href="../modules/session_14.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 14 — Introduction to Unit Testing <em>(Optional)</em></span></a>
   </div>
 </li>
       </ul>
@@ -456,47 +461,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 3 Exercise — Pandas Basics</span></a>
+  <a href="../exercises/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before You Begin Exercise — Python Foundations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 Exercise — Merging Three Sources</span></a>
+  <a href="../exercises/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 Exercise — Pandas Basics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 Exercise — Aggregations and Summary Statistics</span></a>
+  <a href="../exercises/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 Exercise — Merging Three Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 Exercise — Creating Visualizations</span></a>
+  <a href="../exercises/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 Exercise — Aggregations and Summary Statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 Exercise — Generating the Excel Report</span></a>
+  <a href="../exercises/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 Exercise — Creating Visualizations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 Exercise — Oracle Connection</span></a>
+  <a href="../exercises/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 Exercise — Generating the Excel Report</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 Exercise — Working with Database Results</span></a>
+  <a href="../exercises/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 Exercise — Oracle Connection</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 Exercise — Calling the Education Data API</span></a>
+  <a href="../exercises/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 Exercise — Working with Database Results</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 Exercise — Working with API Results</span></a>
+  <a href="../exercises/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 Exercise — Calling the Education Data API</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../exercises/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 Exercise — Working with API Results</span></a>
   </div>
 </li>
       </ul>
@@ -513,14 +523,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#setting-up" id="toc-setting-up" class="nav-link" data-scroll-target="#setting-up">Setting Up</a></li>
-  <li><a href="#building-report.py-v1" id="toc-building-report.py-v1" class="nav-link" data-scroll-target="#building-report.py-v1">Building report.py v1</a>
+  <li><a href="#building-transform.py-v2" id="toc-building-transform.py-v2" class="nav-link" data-scroll-target="#building-transform.py-v2">Building transform.py v2</a>
   <ul class="collapse">
-  <li><a href="#starting-the-file" id="toc-starting-the-file" class="nav-link" data-scroll-target="#starting-the-file">Starting the file</a></li>
-  <li><a href="#save_top_schools_chart" id="toc-save_top_schools_chart" class="nav-link" data-scroll-target="#save_top_schools_chart">save_top_schools_chart()</a></li>
-  <li><a href="#save_size_chart" id="toc-save_size_chart" class="nav-link" data-scroll-target="#save_size_chart">save_size_chart()</a></li>
+  <li><a href="#bucketing-school-enrollment-with-pd.cut" id="toc-bucketing-school-enrollment-with-pd.cut" class="nav-link" data-scroll-target="#bucketing-school-enrollment-with-pd.cut">Bucketing school enrollment with pd.cut()</a></li>
+  <li><a href="#summarize_top_schools" id="toc-summarize_top_schools" class="nav-link" data-scroll-target="#summarize_top_schools">summarize_top_schools()</a></li>
+  <li><a href="#summarize_by_zip" id="toc-summarize_by_zip" class="nav-link" data-scroll-target="#summarize_by_zip">summarize_by_zip()</a></li>
+  <li><a href="#summarize_by_size" id="toc-summarize_by_size" class="nav-link" data-scroll-target="#summarize_by_size">summarize_by_size()</a></li>
   <li><a href="#testing-with-a-main-block" id="toc-testing-with-a-main-block" class="nav-link" data-scroll-target="#testing-with-a-main-block">Testing with a <strong>main</strong> block</a></li>
   </ul></li>
-  <li><a href="#report.py-v1-complete-file" id="toc-report.py-v1-complete-file" class="nav-link" data-scroll-target="#report.py-v1-complete-file">report.py v1 — Complete File</a></li>
+  <li><a href="#transform.py-v2-complete-file" id="toc-transform.py-v2-complete-file" class="nav-link" data-scroll-target="#transform.py-v2-complete-file">transform.py v2 — Complete File</a></li>
   <li><a href="#practice-exercise" id="toc-practice-exercise" class="nav-link" data-scroll-target="#practice-exercise">Practice Exercise</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
   </ul>
@@ -530,9 +541,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/session_03.html">Phase 1: Working with Provided Data</a></li><li class="breadcrumb-item"><a href="../modules/session_06.html"><span class="chapter-title">Session 6 — Creating Visualizations</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/session_03.html">Phase 1: Working with Provided Data</a></li><li class="breadcrumb-item"><a href="../modules/session_06.html"><span class="chapter-title">Session 6 — Aggregations and Summary Statistics</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Session 6 — Creating Visualizations</span></h1>
+<h1 class="title"><span class="chapter-title">Session 6 — Aggregations and Summary Statistics</span></h1>
 </div>
 
 
@@ -551,139 +562,203 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p><code>transform.py</code> is complete. The pipeline now produces three summary DataFrames — top schools, by ZIP, and by school size — plus the full merged DataFrame. This session builds <code>report.py</code> v1: two functions that turn those summaries into saved chart files. By the end of the session, two <code>.png</code> files are written to the reports directory and the chart-generation layer of the pipeline is done.</p>
-<p>Reference: Prior session — Session 5</p>
-<hr>
+<p>Session 5 produced a merged DataFrame: one row per student, enriched with their middle school’s name, city, ZIP, and enrollment figure where a survey match existed. The data is now ready to summarize. This session builds <code>transform.py</code> v2: four additions — an enrollment size bucket column added to <code>merge_data()</code>, and three new functions that compute the summaries the report needs. At the end of this session, <code>transform.py</code> is complete.</p>
 </section>
 <section id="setting-up" class="level2">
 <h2 class="anchored" data-anchor-id="setting-up">Setting Up</h2>
-<p>Open VS Code and activate your conda environment in the terminal.</p>
-<p>In the Explorer pane, right-click the <code>student_report/</code> folder and choose <strong>New File</strong>. Name it <code>report.py</code>.</p>
-<p>In the terminal:</p>
-<pre><code>conda activate student-report</code></pre>
+<p>Open VS Code, activate your conda environment in the terminal, and open <code>student_report/transform.py</code>.</p>
+<p>In Git Bash:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate student-report</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Confirm <code>(student-report)</code> appears in your terminal prompt before continuing.</p>
 <blockquote class="blockquote">
-<p><strong>No VPN or prior sessions required.</strong> The <code>__main__</code> block imports from <code>transform.py</code> and loads the pre-committed CSV files from <code>student_report/data/</code>.</p>
+<p><strong>No VPN or prior sessions required.</strong> All three CSV files are pre-committed to <code>student_report/data/</code> — no setup steps needed beyond activating the conda environment.</p>
 </blockquote>
-<hr>
 </section>
-<section id="building-report.py-v1" class="level2">
-<h2 class="anchored" data-anchor-id="building-report.py-v1">Building report.py v1</h2>
-<section id="starting-the-file" class="level3">
-<h3 class="anchored" data-anchor-id="starting-the-file">Starting the file</h3>
-<p>Create <code>student_report/report.py</code> and add the imports:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>matplotlib</code> is already installed in the conda environment. <code>pd</code> and <code>Path</code> are included because the <code>__main__</code> block uses them; neither is used by the two chart functions directly.</p>
+<section id="building-transform.py-v2" class="level2">
+<h2 class="anchored" data-anchor-id="building-transform.py-v2">Building transform.py v2</h2>
+<section id="bucketing-school-enrollment-with-pd.cut" class="level3">
+<h3 class="anchored" data-anchor-id="bucketing-school-enrollment-with-pd.cut">Bucketing school enrollment with pd.cut()</h3>
+<p>The merged DataFrame has an <code>enrollment</code> column — the total number of students at each middle school. Raw enrollment figures are useful for sorting, but the report needs to group schools into three readable categories: Small, Medium, and Large. <code>pd.cut()</code> does this: it takes a continuous numeric column and divides it into labeled bins.</p>
+<p>Update <code>merge_data()</code> to add the <code>school_size</code> assignment before the <code>return</code> statement:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-2"><pre class="sourceCode python code-annotation-code code-with-copy code-annotated"><code class="sourceCode python"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> merge_data(students_df, survey_df, school_df):</span>
+<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a>    students_df <span class="op">=</span> students_df.copy()</span>
+<span id="annotated-cell-2-3"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a>    survey_df <span class="op">=</span> survey_df.copy()</span>
+<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a>    school_df <span class="op">=</span> school_df.copy()</span>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6" aria-hidden="true" tabindex="-1"></a>    students_df[<span class="st">'zip'</span>] <span class="op">=</span> students_df[<span class="st">'zip'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">5</span>)</span>
+<span id="annotated-cell-2-7"><a href="#annotated-cell-2-7" aria-hidden="true" tabindex="-1"></a>    school_df[<span class="st">'zip_mailing'</span>] <span class="op">=</span> (</span>
+<span id="annotated-cell-2-8"><a href="#annotated-cell-2-8" aria-hidden="true" tabindex="-1"></a>        school_df[<span class="st">'zip_mailing'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>].<span class="bu">str</span>.zfill(<span class="dv">5</span>)</span>
+<span id="annotated-cell-2-9"><a href="#annotated-cell-2-9" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="annotated-cell-2-10"><a href="#annotated-cell-2-10" aria-hidden="true" tabindex="-1"></a>    survey_df[<span class="st">'ncessch'</span>] <span class="op">=</span> survey_df[<span class="st">'ncessch'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span>
+<span id="annotated-cell-2-11"><a href="#annotated-cell-2-11" aria-hidden="true" tabindex="-1"></a>    school_df[<span class="st">'ncessch'</span>] <span class="op">=</span> school_df[<span class="st">'ncessch'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span>
+<span id="annotated-cell-2-12"><a href="#annotated-cell-2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-13"><a href="#annotated-cell-2-13" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> students_df.merge(survey_df, on<span class="op">=</span><span class="st">'student_id'</span>, how<span class="op">=</span><span class="st">'left'</span>)</span>
+<span id="annotated-cell-2-14"><a href="#annotated-cell-2-14" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> merged.merge(school_df, on<span class="op">=</span><span class="st">'ncessch'</span>, how<span class="op">=</span><span class="st">'left'</span>)</span>
+<span id="annotated-cell-2-15"><a href="#annotated-cell-2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-16"><a href="#annotated-cell-2-16" aria-hidden="true" tabindex="-1"></a>    merged[<span class="st">'school_size'</span>] <span class="op">=</span> pd.cut(</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-2-17" class="code-annotation-target"><a href="#annotated-cell-2-17" aria-hidden="true" tabindex="-1"></a>        merged[<span class="st">'enrollment'</span>],</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-2-18" class="code-annotation-target"><a href="#annotated-cell-2-18" aria-hidden="true" tabindex="-1"></a>        bins<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">300</span>, <span class="dv">700</span>, <span class="bu">float</span>(<span class="st">'inf'</span>)],</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-2-19" class="code-annotation-target"><a href="#annotated-cell-2-19" aria-hidden="true" tabindex="-1"></a>        labels<span class="op">=</span>[<span class="st">'Small (&lt;300)'</span>, <span class="st">'Medium (300-700)'</span>, <span class="st">'Large (700+)'</span>],</span>
+<span id="annotated-cell-2-20"><a href="#annotated-cell-2-20" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="annotated-cell-2-21"><a href="#annotated-cell-2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-22"><a href="#annotated-cell-2-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> merged</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="17" data-code-annotation="1">The input series. Students with no survey match have <code>NaN</code> enrollment; <code>pd.cut()</code> leaves those rows as <code>NaN</code> in the output column.</span>
+</dd>
+<dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="18" data-code-annotation="2">Three intervals: (0, 300], (300, 700], (700, ∞). Each value in the list is the right edge of the bin it closes.</span>
+</dd>
+<dt data-target-cell="annotated-cell-2" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="19" data-code-annotation="3">One label per bin. The result is a pandas <code>Categorical</code> column — a dtype that stores a fixed, ordered set of possible values rather than arbitrary strings.</span>
+</dd>
+</dl>
+<p>The new <code>school_size</code> column travels with the DataFrame into the summarize functions below.</p>
 </section>
-<section id="save_top_schools_chart" class="level3">
-<h3 class="anchored" data-anchor-id="save_top_schools_chart">save_top_schools_chart()</h3>
-<p>Add <code>save_top_schools_chart()</code> below the imports:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> save_top_schools_chart(top_schools_df, output_dir):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    path <span class="op">=</span> Path(output_dir) <span class="op">/</span> <span class="st">"top_middle_schools.png"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    ax.barh(top_schools_df[<span class="st">'middle_school_name'</span>], top_schools_df[<span class="st">'student_count'</span>], color<span class="op">=</span><span class="st">'steelblue'</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">"Number of Students"</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="st">"Top 10 Middle Schools by Student Count"</span>)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    ax.invert_yaxis()</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout()</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    plt.savefig(path)</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    plt.close()</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> path</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Walk through each line:</p>
-<p><strong><code>fig, ax = plt.subplots(figsize=(10, 6))</code></strong> — creates a figure and a single set of axes. <code>fig</code> is the overall container; <code>ax</code> is the drawing area where the chart is placed. <code>figsize=(10, 6)</code> sets the width and height in inches — wide enough to show school names without overlap.</p>
-<p><strong><code>ax.barh(...)</code></strong> — draws a horizontal bar chart. The first argument is the y-axis labels (<code>middle_school_name</code>), the second is the bar lengths (<code>student_count</code>). Horizontal bars are the right choice here because school names are long strings that would overlap on a vertical chart’s x-axis.</p>
-<p><strong><code>ax.set_xlabel("Number of Students")</code></strong> — labels the x-axis. On a horizontal bar chart the x-axis carries the numeric values, so this is the axis that needs a unit label.</p>
-<p><strong><code>ax.set_title(...)</code></strong> — adds a title above the chart.</p>
-<p><strong><code>ax.invert_yaxis()</code></strong> — by default <code>barh</code> places the first row at the bottom of the chart. After sorting descending in <code>summarize_top_schools()</code>, the school with the highest count is in the first row — which would end up at the bottom without this call. <code>invert_yaxis()</code> flips the order so the largest bar appears at the top, which is the natural reading direction for a ranked list.</p>
-<p><strong><code>plt.tight_layout()</code></strong> — adjusts spacing so axis labels and the title are not clipped at the figure edges. It should be called after all labels are set and before saving.</p>
-<p><strong><code>plt.savefig(path)</code></strong> — writes the figure to a file. The format is inferred from the file extension (<code>.png</code>). The file is written to <code>output_dir</code> regardless of the current working directory.</p>
-<p><strong><code>plt.close()</code></strong> — releases the figure from memory. Without this call, every chart created in a session accumulates in memory, and matplotlib will print a warning after 20 open figures. Always call <code>plt.close()</code> immediately after saving.</p>
-<p><strong><code>return path</code></strong> — returns the saved file path so the caller (later, <code>main.py</code>) can log or display it.</p>
+<section id="summarize_top_schools" class="level3">
+<h3 class="anchored" data-anchor-id="summarize_top_schools">summarize_top_schools()</h3>
+<p>Add <code>summarize_top_schools()</code> below <code>merge_data()</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> summarize_top_schools(merged_df):</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    matched <span class="op">=</span> merged_df.dropna(subset<span class="op">=</span>[<span class="st">'middle_school_name'</span>])</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        matched.groupby([<span class="st">'middle_school_name'</span>, <span class="st">'city_location'</span>, <span class="st">'zip_mailing'</span>, <span class="st">'school_size'</span>])</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        .agg(student_count<span class="op">=</span>(<span class="st">'student_id'</span>, <span class="st">'count'</span>), school_enrollment<span class="op">=</span>(<span class="st">'enrollment'</span>, <span class="st">'first'</span>))</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        .reset_index()</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        .sort_values(<span class="st">'student_count'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        .head(<span class="dv">10</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Walk through each step:</p>
+<p><strong><code>.dropna(subset=['middle_school_name'])</code></strong> — students with no survey match have <code>NaN</code> for <code>middle_school_name</code>. Dropping them before grouping prevents a <code>NaN</code> group from appearing in the result.</p>
+<p><strong><code>.groupby([...])</code></strong> — groups by four columns that together identify a school. Including <code>city_location</code>, <code>zip_mailing</code>, and <code>school_size</code> in the groupby key carries them into the result without a separate join — every student at the same school has the same values for those columns, so grouping on them is safe and keeps the result readable.</p>
+<p><strong><code>.agg(student_count=..., school_enrollment=...)</code></strong> — named aggregation syntax: each keyword argument becomes a column name in the result. <code>('student_id', 'count')</code> counts the rows in the group; <code>('enrollment', 'first')</code> retrieves the enrollment figure — the same on every row in the group, so <code>'first'</code> is sufficient.</p>
+<p><strong><code>.reset_index()</code></strong> — after a groupby, the group keys become the index. <code>.reset_index()</code> promotes them back to regular columns so the result is a flat DataFrame.</p>
+<p><strong><code>.sort_values('student_count', ascending=False).head(10)</code></strong> — sort from largest to smallest and keep the top 10.</p>
 </section>
-<section id="save_size_chart" class="level3">
-<h3 class="anchored" data-anchor-id="save_size_chart">save_size_chart()</h3>
-<p>Add <code>save_size_chart()</code> below <code>save_top_schools_chart()</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> save_size_chart(size_df, output_dir):</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    path <span class="op">=</span> Path(output_dir) <span class="op">/</span> <span class="st">"school_size_distribution.png"</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">5</span>))</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    ax.bar(size_df[<span class="st">'school_size'</span>].astype(<span class="bu">str</span>), size_df[<span class="st">'student_count'</span>], color<span class="op">=</span><span class="st">'teal'</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">"School Size"</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    ax.set_ylabel(<span class="st">"Number of Students"</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="st">"Students by Middle School Size"</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout()</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    plt.savefig(path)</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    plt.close()</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> path</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The structure mirrors <code>save_top_schools_chart()</code> with two differences:</p>
-<p><strong><code>ax.bar()</code> instead of <code>ax.barh()</code></strong> — vertical bars. The three size category labels are short (<code>Small</code>, <code>Medium</code>, <code>Large</code>) and fit comfortably on a horizontal x-axis, so there is no reason to rotate the chart.</p>
-<p><strong><code>size_df['school_size'].astype(str)</code></strong> — <code>school_size</code> is a pandas <code>Categorical</code> column (created by <code>pd.cut()</code> in Session 5). matplotlib does not know how to place categorical tick marks automatically, so converting to plain strings produces clean, evenly spaced labels on the x-axis.</p>
-<p><strong><code>ax.set_ylabel("Number of Students")</code></strong> — a vertical chart carries the numeric values on the y-axis, which now needs the unit label. The x-axis label (<code>ax.set_xlabel</code>) describes the categories.</p>
-<p>No <code>invert_yaxis()</code> call — the three size bins are not a ranked list, so the default bottom-to-top direction is fine.</p>
+<section id="summarize_by_zip" class="level3">
+<h3 class="anchored" data-anchor-id="summarize_by_zip">summarize_by_zip()</h3>
+<p>Add <code>summarize_by_zip()</code> below <code>summarize_top_schools()</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> summarize_by_zip(merged_df):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    matched <span class="op">=</span> merged_df.dropna(subset<span class="op">=</span>[<span class="st">'zip_mailing'</span>])</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        matched.groupby([<span class="st">'zip_mailing'</span>, <span class="st">'city_location'</span>])</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        .agg(student_count<span class="op">=</span>(<span class="st">'student_id'</span>, <span class="st">'count'</span>))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        .reset_index()</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>        .sort_values(<span class="st">'student_count'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This follows the same pattern as <code>summarize_top_schools()</code> but groups by ZIP code and city instead of school name. The result answers a geographic question: which ZIP codes do the most students come from?</p>
+<p><code>zip_mailing</code> is the school’s mailing ZIP — it identifies the neighborhood where the middle school sits, which is the relevant geography for outreach targeting.</p>
+</section>
+<section id="summarize_by_size" class="level3">
+<h3 class="anchored" data-anchor-id="summarize_by_size">summarize_by_size()</h3>
+<p>Add <code>summarize_by_size()</code> below <code>summarize_by_zip()</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> summarize_by_size(merged_df):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>        merged_df.groupby(<span class="st">'school_size'</span>, observed<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        .agg(student_count<span class="op">=</span>(<span class="st">'student_id'</span>, <span class="st">'count'</span>))</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        .reset_index()</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong><code>observed=True</code></strong> is required when grouping by a <code>Categorical</code> column — which is what <code>pd.cut()</code> produces. Without it, pandas includes a row for every possible category label even if no students belong to it, and raises a <code>FutureWarning</code> in pandas versions before 2.0. <code>observed=True</code> tells pandas to include only categories that actually appear in the data.</p>
+<p>This function does not call <code>.dropna()</code> before grouping. Students with <code>NaN</code> enrollment have <code>NaN</code> school_size and are automatically excluded from all bins — no extra filtering is needed.</p>
 </section>
 <section id="testing-with-a-main-block" class="level3">
 <h3 class="anchored" data-anchor-id="testing-with-a-main-block">Testing with a <strong>main</strong> block</h3>
-<p>Add a <code>if __name__ == '__main__':</code> block that imports from <code>transform.py</code> and produces both charts:</p>
+<p>Add a <code>if __name__ == '__main__':</code> block to run all five functions and inspect the results:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">'__main__'</span>:</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="im">from</span> transform <span class="im">import</span> get_students, merge_data, summarize_top_schools, summarize_by_size</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    enrollment_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/enrollment.csv'</span>)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    survey_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/survey_middle_schools.csv'</span>)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    school_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/schools.csv'</span>)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    students <span class="op">=</span> get_students(enrollment_df)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> merge_data(students, survey_df, school_df)</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    top_schools <span class="op">=</span> summarize_top_schools(merged)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    size_summary <span class="op">=</span> summarize_by_size(merged)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    output_dir <span class="op">=</span> <span class="st">'student_report/reports'</span></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    chart1 <span class="op">=</span> save_top_schools_chart(top_schools, output_dir)</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    chart2 <span class="op">=</span> save_size_chart(size_summary, output_dir)</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Saved: </span><span class="sc">{</span>chart1<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Saved: </span><span class="sc">{</span>chart2<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The <code>from transform import ...</code> line works because running <code>python student_report/report.py</code> adds the <code>student_report/</code> directory to Python’s module search path automatically, making <code>transform.py</code> importable by name.</p>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    enrollment_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/enrollment.csv'</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    survey_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/survey_middle_schools.csv'</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    school_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/schools.csv'</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    students <span class="op">=</span> get_students(enrollment_df)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> merge_data(students, survey_df, school_df)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    top_schools <span class="op">=</span> summarize_top_schools(merged)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Top 10 schools:"</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(top_schools)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    zip_summary <span class="op">=</span> summarize_by_zip(merged)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"By ZIP:"</span>)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(zip_summary.head())</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    size_summary <span class="op">=</span> summarize_by_size(merged)</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"By school size:"</span>)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(size_summary)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Run from the repo root:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> student_report/report.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You should see two file paths printed. Open <code>student_report/reports/</code> and confirm that <code>top_middle_schools.png</code> and <code>school_size_distribution.png</code> were created or updated. Open each file to verify the charts look right — the horizontal bar chart should show schools ranked largest at the top; the vertical bar chart should show three labeled columns.</p>
-<hr>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> student_report/transform.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The top schools table shows the 10 middle schools with the highest student counts, ranked largest first. The size summary should show three rows — one per bucket — with no empty categories. If a <code>FutureWarning</code> appears, verify that <code>observed=True</code> is present in <code>summarize_by_size()</code>.</p>
 </section>
 </section>
-<section id="report.py-v1-complete-file" class="level2">
-<h2 class="anchored" data-anchor-id="report.py-v1-complete-file">report.py v1 — Complete File</h2>
-<p>Remove the <code>if __name__ == '__main__':</code> block. The final <code>report.py</code> v1 defines three imports and two functions:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> save_top_schools_chart(top_schools_df, output_dir):</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    path <span class="op">=</span> Path(output_dir) <span class="op">/</span> <span class="st">"top_middle_schools.png"</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    ax.barh(top_schools_df[<span class="st">'middle_school_name'</span>], top_schools_df[<span class="st">'student_count'</span>], color<span class="op">=</span><span class="st">'steelblue'</span>)</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">"Number of Students"</span>)</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="st">"Top 10 Middle Schools by Student Count"</span>)</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    ax.invert_yaxis()</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout()</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    plt.savefig(path)</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    plt.close()</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> path</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> save_size_chart(size_df, output_dir):</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    path <span class="op">=</span> Path(output_dir) <span class="op">/</span> <span class="st">"school_size_distribution.png"</span></span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">5</span>))</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    ax.bar(size_df[<span class="st">'school_size'</span>].astype(<span class="bu">str</span>), size_df[<span class="st">'student_count'</span>], color<span class="op">=</span><span class="st">'teal'</span>)</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    ax.set_xlabel(<span class="st">"School Size"</span>)</span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    ax.set_ylabel(<span class="st">"Number of Students"</span>)</span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="st">"Students by Middle School Size"</span>)</span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    plt.tight_layout()</span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    plt.savefig(path)</span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    plt.close()</span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> path</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>main.py</code> (Session 12) will call both functions by importing <code>report.py</code>. There is no top-level code after the imports, so the import is safe — no file I/O or computation happens until the functions are explicitly called.</p>
-<p>In Session 7, we add <code>save_excel_report()</code> to <code>report.py</code>: a function that writes the full five-sheet Excel workbook and embeds the saved chart images.</p>
-<hr>
+<section id="transform.py-v2-complete-file" class="level2">
+<h2 class="anchored" data-anchor-id="transform.py-v2-complete-file">transform.py v2 — Complete File</h2>
+<p>Remove the <code>if __name__ == '__main__':</code> block. The final <code>transform.py</code> defines one import and five functions:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_students(enrollment_df):</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        enrollment_df[[<span class="st">'student_id'</span>, <span class="st">'first_name'</span>, <span class="st">'last_name'</span>, <span class="st">'zip'</span>, <span class="st">'city'</span>, <span class="st">'state'</span>]]</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        .drop_duplicates(subset<span class="op">=</span>[<span class="st">'student_id'</span>])</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        .copy()</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> merge_data(students_df, survey_df, school_df):</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    students_df <span class="op">=</span> students_df.copy()</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    survey_df <span class="op">=</span> survey_df.copy()</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    school_df <span class="op">=</span> school_df.copy()</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    students_df[<span class="st">'zip'</span>] <span class="op">=</span> students_df[<span class="st">'zip'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">5</span>)</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    school_df[<span class="st">'zip_mailing'</span>] <span class="op">=</span> (</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>        school_df[<span class="st">'zip_mailing'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>].<span class="bu">str</span>.zfill(<span class="dv">5</span>)</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    survey_df[<span class="st">'ncessch'</span>] <span class="op">=</span> survey_df[<span class="st">'ncessch'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    school_df[<span class="st">'ncessch'</span>] <span class="op">=</span> school_df[<span class="st">'ncessch'</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> students_df.merge(survey_df, on<span class="op">=</span><span class="st">'student_id'</span>, how<span class="op">=</span><span class="st">'left'</span>)</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    merged <span class="op">=</span> merged.merge(school_df, on<span class="op">=</span><span class="st">'ncessch'</span>, how<span class="op">=</span><span class="st">'left'</span>)</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    merged[<span class="st">'school_size'</span>] <span class="op">=</span> pd.cut(</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>        merged[<span class="st">'enrollment'</span>],</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>        bins<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">300</span>, <span class="dv">700</span>, <span class="bu">float</span>(<span class="st">'inf'</span>)],</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>        labels<span class="op">=</span>[<span class="st">'Small (&lt;300)'</span>, <span class="st">'Medium (300-700)'</span>, <span class="st">'Large (700+)'</span>],</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> merged</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> summarize_top_schools(merged_df):</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>    matched <span class="op">=</span> merged_df.dropna(subset<span class="op">=</span>[<span class="st">'middle_school_name'</span>])</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>        matched.groupby([<span class="st">'middle_school_name'</span>, <span class="st">'city_location'</span>, <span class="st">'zip_mailing'</span>, <span class="st">'school_size'</span>])</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>        .agg(student_count<span class="op">=</span>(<span class="st">'student_id'</span>, <span class="st">'count'</span>), school_enrollment<span class="op">=</span>(<span class="st">'enrollment'</span>, <span class="st">'first'</span>))</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>        .reset_index()</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>        .sort_values(<span class="st">'student_count'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>        .head(<span class="dv">10</span>)</span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> summarize_by_zip(merged_df):</span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a>    matched <span class="op">=</span> merged_df.dropna(subset<span class="op">=</span>[<span class="st">'zip_mailing'</span>])</span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>        matched.groupby([<span class="st">'zip_mailing'</span>, <span class="st">'city_location'</span>])</span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>        .agg(student_count<span class="op">=</span>(<span class="st">'student_id'</span>, <span class="st">'count'</span>))</span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a>        .reset_index()</span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a>        .sort_values(<span class="st">'student_count'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> summarize_by_size(merged_df):</span>
+<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
+<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a>        merged_df.groupby(<span class="st">'school_size'</span>, observed<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a>        .agg(student_count<span class="op">=</span>(<span class="st">'student_id'</span>, <span class="st">'count'</span>))</span>
+<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a>        .reset_index()</span>
+<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>transform.py</code> is now complete. <code>main.py</code> (Session 13) will call all five functions by importing this module. There is no top-level code after the import, so the import is safe — no file I/O or computation happens until the functions are explicitly called.</p>
+<p>In Session 7, we build <code>report.py</code> v1: the two chart functions that visualize the top schools and size distribution summaries.</p>
 </section>
 <section id="practice-exercise" class="level2">
 <h2 class="anchored" data-anchor-id="practice-exercise">Practice Exercise</h2>
@@ -697,11 +772,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
 <ul>
-<li><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.barh.html">matplotlib — Horizontal bar chart (barh)</a></li>
-<li><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.bar.html">matplotlib — Bar chart (bar)</a></li>
-<li><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html">matplotlib — savefig</a></li>
-<li><a href="https://matplotlib.org/stable/tutorials/pyplot.html">matplotlib — Pyplot tutorial</a></li>
-<li><em>Automate the Boring Stuff with Python</em>, 3rd Ed. — Chapter 17 (working with files and directories)</li>
+<li><a href="https://pandas.pydata.org/docs/reference/api/pandas.cut.html">pandas — pd.cut</a></li>
+<li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html">pandas — DataFrame.groupby</a></li>
+<li><a href="https://pandas.pydata.org/docs/reference/api/pandas.core.groupby.DataFrameGroupBy.aggregate.html">pandas — GroupBy.agg</a></li>
+<li><a href="https://pandas.pydata.org/docs/reference/api/pandas.Series.value_counts.html">pandas — Series.value_counts</a></li>
+<li><a href="https://pandas.pydata.org/docs/user_guide/categorical.html">pandas — Categorical data</a></li>
 </ul>
 
 
@@ -1123,13 +1198,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../modules/session_05.html" class="pagination-link" aria-label="Session 5 — Aggregations and Summary Statistics">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Session 5 — Aggregations and Summary Statistics</span></span>
+      <a href="../modules/session_05.html" class="pagination-link" aria-label="Session 5 — Merging the Three Sources">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Session 5 — Merging the Three Sources</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../modules/session_07.html" class="pagination-link" aria-label="Session 7 — Generating the Excel Report">
-        <span class="nav-page-text"><span class="chapter-title">Session 7 — Generating the Excel Report</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../modules/session_07.html" class="pagination-link" aria-label="Session 7 — Creating Visualizations">
+        <span class="nav-page-text"><span class="chapter-title">Session 7 — Creating Visualizations</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Session 10 — Calling a Web API – Automating Data Analytics with Python</title>
+<title>Session 10 — Working with Database Results – Automating Data Analytics with Python</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -286,7 +286,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/session_08.html">Phase 2: Automating Data Collection</a></li><li class="breadcrumb-item"><a href="../modules/session_10.html"><span class="chapter-title">Session 10 — Calling a Web API</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/session_09.html">Phase 2: Automating Data Collection</a></li><li class="breadcrumb-item"><a href="../modules/session_10.html"><span class="chapter-title">Session 10 — Working with Database Results</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -357,27 +357,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 3 — Pandas and Working with Data</span></a>
+  <a href="../modules/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before You Begin — Python Foundations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 — Merging the Three Sources</span></a>
+  <a href="../modules/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 — Pandas and Working with Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 — Aggregations and Summary Statistics</span></a>
+  <a href="../modules/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 — Merging the Three Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 — Creating Visualizations</span></a>
+  <a href="../modules/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 — Aggregations and Summary Statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 — Generating the Excel Report</span></a>
+  <a href="../modules/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 — Creating Visualizations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 — Generating the Excel Report</span></a>
   </div>
 </li>
       </ul>
@@ -393,22 +398,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 — Connecting to the Database</span></a>
+  <a href="../modules/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 — Connecting to the Database</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 — Working with Database Results</span></a>
+  <a href="../modules/session_10.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Session 10 — Working with Database Results</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_10.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Session 10 — Calling a Web API</span></a>
+  <a href="../modules/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 — Calling a Web API</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 — Working with API Results</span></a>
+  <a href="../modules/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 — Working with API Results</span></a>
   </div>
 </li>
       </ul>
@@ -424,7 +429,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 — The Automated Pipeline</span></a>
+  <a href="../modules/session_13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 13 — The Automated Pipeline</span></a>
   </div>
 </li>
       </ul>
@@ -440,7 +445,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 13 — Introduction to Unit Testing <em>(Optional)</em></span></a>
+  <a href="../modules/session_14.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 14 — Introduction to Unit Testing <em>(Optional)</em></span></a>
   </div>
 </li>
       </ul>
@@ -456,47 +461,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 3 Exercise — Pandas Basics</span></a>
+  <a href="../exercises/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before You Begin Exercise — Python Foundations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 Exercise — Merging Three Sources</span></a>
+  <a href="../exercises/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 Exercise — Pandas Basics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 Exercise — Aggregations and Summary Statistics</span></a>
+  <a href="../exercises/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 Exercise — Merging Three Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 Exercise — Creating Visualizations</span></a>
+  <a href="../exercises/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 Exercise — Aggregations and Summary Statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 Exercise — Generating the Excel Report</span></a>
+  <a href="../exercises/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 Exercise — Creating Visualizations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 Exercise — Oracle Connection</span></a>
+  <a href="../exercises/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 Exercise — Generating the Excel Report</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 Exercise — Working with Database Results</span></a>
+  <a href="../exercises/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 Exercise — Oracle Connection</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 Exercise — Calling the Education Data API</span></a>
+  <a href="../exercises/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 Exercise — Working with Database Results</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 Exercise — Working with API Results</span></a>
+  <a href="../exercises/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 Exercise — Calling the Education Data API</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../exercises/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 Exercise — Working with API Results</span></a>
   </div>
 </li>
       </ul>
@@ -513,16 +523,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#setting-up" id="toc-setting-up" class="nav-link" data-scroll-target="#setting-up">Setting Up</a></li>
-  <li><a href="#what-is-an-api" id="toc-what-is-an-api" class="nav-link" data-scroll-target="#what-is-an-api">What Is an API?</a></li>
-  <li><a href="#making-a-raw-http-request" id="toc-making-a-raw-http-request" class="nav-link" data-scroll-target="#making-a-raw-http-request">Making a Raw HTTP Request</a></li>
-  <li><a href="#the-urban-education-data-package" id="toc-the-urban-education-data-package" class="nav-link" data-scroll-target="#the-urban-education-data-package">The urban-education-data Package</a></li>
-  <li><a href="#building-api.py-v1" id="toc-building-api.py-v1" class="nav-link" data-scroll-target="#building-api.py-v1">Building api.py v1</a>
+  <li><a href="#the-enrollment-query" id="toc-the-enrollment-query" class="nav-link" data-scroll-target="#the-enrollment-query">The Enrollment Query</a></li>
+  <li><a href="#building-db.py-v2" id="toc-building-db.py-v2" class="nav-link" data-scroll-target="#building-db.py-v2">Building db.py v2</a>
   <ul class="collapse">
-  <li><a href="#calling-the-api" id="toc-calling-the-api" class="nav-link" data-scroll-target="#calling-the-api">Calling the API</a></li>
-  <li><a href="#converting-to-a-dataframe" id="toc-converting-to-a-dataframe" class="nav-link" data-scroll-target="#converting-to-a-dataframe">Converting to a DataFrame</a></li>
-  <li><a href="#exploring-the-columns" id="toc-exploring-the-columns" class="nav-link" data-scroll-target="#exploring-the-columns">Exploring the columns</a></li>
+  <li><a href="#clearing-the-exploration-code" id="toc-clearing-the-exploration-code" class="nav-link" data-scroll-target="#clearing-the-exploration-code">Clearing the exploration code</a></li>
+  <li><a href="#defining-the-query-as-a-constant" id="toc-defining-the-query-as-a-constant" class="nav-link" data-scroll-target="#defining-the-query-as-a-constant">Defining the query as a constant</a></li>
+  <li><a href="#writing-the-function" id="toc-writing-the-function" class="nav-link" data-scroll-target="#writing-the-function">Writing the function</a></li>
+  <li><a href="#running-the-function" id="toc-running-the-function" class="nav-link" data-scroll-target="#running-the-function">Running the function</a></li>
+  <li><a href="#exploring-the-result" id="toc-exploring-the-result" class="nav-link" data-scroll-target="#exploring-the-result">Exploring the result</a></li>
+  <li><a href="#saving-the-result-to-csv" id="toc-saving-the-result-to-csv" class="nav-link" data-scroll-target="#saving-the-result-to-csv">Saving the result to CSV</a></li>
   </ul></li>
-  <li><a href="#api.py-v1-complete-file" id="toc-api.py-v1-complete-file" class="nav-link" data-scroll-target="#api.py-v1-complete-file">api.py v1 — Complete File</a></li>
+  <li><a href="#db.py-v2-complete-file" id="toc-db.py-v2-complete-file" class="nav-link" data-scroll-target="#db.py-v2-complete-file">db.py v2 — Complete File</a></li>
   <li><a href="#practice-exercise" id="toc-practice-exercise" class="nav-link" data-scroll-target="#practice-exercise">Practice Exercise</a></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
   </ul>
@@ -532,9 +543,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/session_08.html">Phase 2: Automating Data Collection</a></li><li class="breadcrumb-item"><a href="../modules/session_10.html"><span class="chapter-title">Session 10 — Calling a Web API</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modules/session_09.html">Phase 2: Automating Data Collection</a></li><li class="breadcrumb-item"><a href="../modules/session_10.html"><span class="chapter-title">Session 10 — Working with Database Results</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Session 10 — Calling a Web API</span></h1>
+<h1 class="title"><span class="chapter-title">Session 10 — Working with Database Results</span></h1>
 </div>
 
 
@@ -553,155 +564,229 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p><code>schools.csv</code> in <code>student_report/data/</code> was downloaded manually from the Urban Institute Education Data Portal website — the same multi-step process in the original workflow that took 15–20 minutes every month. This session automates that download. We look at what a web API is, make a raw HTTP request to see the structure, then use the <code>urban-education-data</code> package to call the Urban Institute’s CCD school directory and inspect what comes back. The result is <code>api.py</code> v1 — exploration code that confirms we can reach the API and understand the data. Session 11 will refactor it into a reusable function.</p>
-<p>Reference: <em>Automate the Boring Stuff with Python</em>, Chapter 12 (Making HTTP Requests)</p>
-<hr>
+<p>Session 9 confirmed the Oracle connection works and ran a single-table query. This session builds <code>db.py</code> v2: we replace the top-level exploration code with a five-table enrollment JOIN wrapped in a reusable function, and normalize the column names so the rest of the pipeline can use them consistently. The finished <code>db.py</code> is a module — it defines a function rather than running code at the top level — so it can be safely imported in later sessions without triggering a database query.</p>
+<blockquote class="blockquote">
+<p><strong>GSU network required.</strong> The Oracle server is only reachable on the GSU network. On campus, GSU WiFi is sufficient. If you are working off campus, connect to the GSU VPN before starting the code-along and before running the practice exercise.</p>
+</blockquote>
 </section>
 <section id="setting-up" class="level2">
 <h2 class="anchored" data-anchor-id="setting-up">Setting Up</h2>
-<p>Open VS Code and activate your conda environment in the terminal.</p>
-<p>In the Explorer pane, right-click the <code>student_report/</code> folder and choose <strong>New File</strong>. Name it <code>api.py</code>.</p>
-<p>In the terminal:</p>
-<pre><code>conda activate student-report</code></pre>
+<p>Open VS Code, activate your conda environment in the terminal, and open <code>student_report/db.py</code>. This is the file you built in Session 9.</p>
+<p>In Git Bash:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate student-report</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Confirm <code>(student-report)</code> appears in your terminal prompt before continuing.</p>
-<hr>
+<p>Your current <code>db.py</code> should look like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lightoracle <span class="im">import</span> LightOracleConnection</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>load_dotenv(Path(<span class="va">__file__</span>).parent <span class="op">/</span> <span class="st">".env"</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>conn <span class="op">=</span> LightOracleConnection()</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>conn.test_connection()</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> conn.execute_query(<span class="st">"SELECT * FROM student FETCH FIRST 5 ROWS ONLY"</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.info())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The lines after <code>load_dotenv(...)</code> are top-level statements — they run every time this file is imported by another script, not just when you run it directly. That was fine for exploring the connection in Session 9. Today we restructure <code>db.py</code> so it defines a function instead of running code, and replace the single-table query with the full enrollment data we actually need.</p>
 </section>
-<section id="what-is-an-api" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-an-api">What Is an API?</h2>
-<p>In the manual workflow, someone visits a website, finds the right download link, and saves the file. A <strong>web API</strong> (Application Programming Interface) is a way for programs to request the same data programmatically — no browser, no clicking, no manual download.</p>
-<p>An API exposes one or more <strong>endpoints</strong>: specific URLs that return data in a structured format. You send an HTTP GET request (the same kind of request a browser sends when you type a URL) and the server responds with data, usually formatted as <strong>JSON</strong>.</p>
-<p><strong>JSON</strong> (JavaScript Object Notation) is a text format for structured data. It looks like a Python dictionary:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"ncessch"</span><span class="fu">:</span> <span class="dv">360007702472</span><span class="fu">,</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"school_name"</span><span class="fu">:</span> <span class="st">"PS 1 The Bergen"</span><span class="fu">,</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"city_location"</span><span class="fu">:</span> <span class="st">"New York"</span><span class="fu">,</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"state_location"</span><span class="fu">:</span> <span class="st">"NY"</span><span class="fu">,</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"enrollment"</span><span class="fu">:</span> <span class="dv">312</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Each school in the CCD directory is one JSON object. The API returns a list of these objects, one per school.</p>
-<hr>
+<section id="the-enrollment-query" class="level2">
+<h2 class="anchored" data-anchor-id="the-enrollment-query">The Enrollment Query</h2>
+<p>The workshop pipeline needs data from five tables in the Oracle database:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Table</th>
+<th>What it contributes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>student</code></td>
+<td>Name, student ID, ZIP code</td>
+</tr>
+<tr class="even">
+<td><code>zipcode</code></td>
+<td>City and state for each ZIP</td>
+</tr>
+<tr class="odd">
+<td><code>enrollment</code></td>
+<td>Which student is enrolled in which section</td>
+</tr>
+<tr class="even">
+<td><code>section</code></td>
+<td>Which course each section belongs to</td>
+</tr>
+<tr class="odd">
+<td><code>course</code></td>
+<td>Course name and cost</td>
+</tr>
+</tbody>
+</table>
+<p>Joining all five tables produces one row for every course a student has enrolled in. A student enrolled in three courses appears three times. <code>transform.py</code> (Session 5) will deduplicate this down to one row per student before merging.</p>
+<p>The complete SQL:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    s.STUDENT_ID,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    s.FIRST_NAME,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    s.LAST_NAME,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    s.ZIP,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    z.CITY,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    z.STATE,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    c.DESCRIPTION  <span class="kw">AS</span> COURSE_NAME,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    c.<span class="kw">COST</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    e.ENROLL_DATE,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    e.FINAL_GRADE</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> student s</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="kw">JOIN</span> zipcode    z <span class="kw">ON</span> s.ZIP        <span class="op">=</span> z.ZIP</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="kw">JOIN</span> enrollment e <span class="kw">ON</span> s.STUDENT_ID <span class="op">=</span> e.STUDENT_ID</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="kw">JOIN</span> section  sec <span class="kw">ON</span> e.SECTION_ID <span class="op">=</span> sec.SECTION_ID</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="kw">JOIN</span> course     c <span class="kw">ON</span> sec.COURSE_NO <span class="op">=</span> c.COURSE_NO</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This is the query the pipeline uses. Each alias (<code>s</code>, <code>z</code>, <code>e</code>, <code>sec</code>, <code>c</code>) is shorthand for the table name — <code>s.STUDENT_ID</code> means the <code>STUDENT_ID</code> column from the <code>student</code> table. The <code>JOIN ... ON</code> clauses link each pair of tables on their shared key column.</p>
 </section>
-<section id="making-a-raw-http-request" class="level2">
-<h2 class="anchored" data-anchor-id="making-a-raw-http-request">Making a Raw HTTP Request</h2>
-<p>The <code>requests</code> library is the standard Python tool for making HTTP requests. It is installed automatically as a dependency of the <code>urban-education-data</code> package in your conda environment.</p>
-<p>Add this to <code>api.py</code> and run it:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">'https://educationdata.urban.org/api/v1/schools/ccd/directory/2019/?fips=36&amp;per_page=1'</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.get(url)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response.status_code)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response.json())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Run from the repo root:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> student_report/api.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You should see <code>200</code> (HTTP OK) followed by a JSON object. The <code>.json()</code> method parses the response body into a Python dictionary. The structure will look like:</p>
-<pre><code>{
-  'count': 1740,
-  'next': 'https://educationdata.urban.org/api/v1/...',
-  'previous': None,
-  'results': [{ ... one school record ... }]
-}</code></pre>
-<p>The <code>count</code> field tells you how many total records match the query (1,740 New York schools in 2019). The <code>results</code> list contains the actual records — only one here because we asked for <code>per_page=1</code>. Getting all 1,740 records would require paginating through each page of results.</p>
-<p>Delete this exploration code. The <code>urban-education-data</code> package handles pagination for you — you never need to page through results manually.</p>
-<hr>
+<section id="building-db.py-v2" class="level2">
+<h2 class="anchored" data-anchor-id="building-db.py-v2">Building db.py v2</h2>
+<section id="clearing-the-exploration-code" class="level3">
+<h3 class="anchored" data-anchor-id="clearing-the-exploration-code">Clearing the exploration code</h3>
+<p>Open <code>student_report/db.py</code>. Delete everything below the <code>load_dotenv(...)</code> line — the <code>conn</code>, <code>conn.test_connection()</code>, <code>df</code>, and <code>print()</code> lines. Leave the imports and <code>load_dotenv(...)</code> in place.</p>
+<p>Your file should now be:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lightoracle <span class="im">import</span> LightOracleConnection</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>load_dotenv(Path(<span class="va">__file__</span>).parent <span class="op">/</span> <span class="st">".env"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="the-urban-education-data-package" class="level2">
-<h2 class="anchored" data-anchor-id="the-urban-education-data-package">The urban-education-data Package</h2>
-<p>The <code>urban-education-data</code> package is a Python client for the Urban Institute Education Data Portal, built and maintained by GSU Analytics. It is already installed in your conda environment via <code>environment.yml</code>.</p>
-<p>It wraps the raw HTTP calls and automatic pagination into a single method call:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> educationdata <span class="im">import</span> EducationDataAPI</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>api <span class="op">=</span> EducationDataAPI()</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> api.ccd_directory(<span class="dv">2019</span>, fips<span class="op">=</span><span class="st">'36,34'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>fips='36,34'</code> requests schools in both New York (36) and New Jersey (34). The result is an <code>EducationDataResult</code> object — not yet a DataFrame. To get a DataFrame, call <code>.to_df()</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> result.to_df()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The package fetches all pages automatically. For NY and NJ middle schools in 2019, that is several thousand records — the call may take a few seconds.</p>
-<blockquote class="blockquote">
-<p><strong>Important:</strong> <code>fips='36,34'</code> must be a comma-separated <strong>string</strong>. Passing a Python list (<code>fips=[36, 34]</code>) returns an HTTP 400 error. This is a quirk of how the API parses the parameter.</p>
-</blockquote>
-<hr>
+<section id="defining-the-query-as-a-constant" class="level3">
+<h3 class="anchored" data-anchor-id="defining-the-query-as-a-constant">Defining the query as a constant</h3>
+<p>Add the enrollment query as a module-level string constant named <code>ENROLLMENT_QUERY</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lightoracle <span class="im">import</span> LightOracleConnection</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>load_dotenv(Path(<span class="va">__file__</span>).parent <span class="op">/</span> <span class="st">".env"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>ENROLLMENT_QUERY <span class="op">=</span> <span class="st">"""</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="st">    SELECT</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="st">        s.STUDENT_ID,</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="st">        s.FIRST_NAME,</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="st">        s.LAST_NAME,</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="st">        s.ZIP,</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="st">        z.CITY,</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="st">        z.STATE,</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="st">        c.DESCRIPTION  AS COURSE_NAME,</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="st">        c.COST,</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="st">        e.ENROLL_DATE,</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="st">        e.FINAL_GRADE</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="st">    FROM student s</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="st">    JOIN zipcode    z ON s.ZIP        = z.ZIP</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="st">    JOIN enrollment e ON s.STUDENT_ID = e.STUDENT_ID</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="st">    JOIN section  sec ON e.SECTION_ID = sec.SECTION_ID</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="st">    JOIN course     c ON sec.COURSE_NO = c.COURSE_NO</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Storing the SQL as a named constant keeps the function short and makes the query easy to find and edit without touching any Python logic. The triple-quoted string <code>""" ... """</code> lets the SQL span multiple lines.</p>
 </section>
-<section id="building-api.py-v1" class="level2">
-<h2 class="anchored" data-anchor-id="building-api.py-v1">Building api.py v1</h2>
-<section id="calling-the-api" class="level3">
-<h3 class="anchored" data-anchor-id="calling-the-api">Calling the API</h3>
-<p>Replace the contents of <code>api.py</code> with:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> educationdata <span class="im">import</span> EducationDataAPI</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>api <span class="op">=</span> EducationDataAPI()</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> api.ccd_directory(<span class="dv">2019</span>, fips<span class="op">=</span><span class="st">'36,34'</span>)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result.count)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><code>result.count</code> is the total number of records returned — useful for a quick sanity check before pulling everything into a DataFrame.</p>
-<p>Run it:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> student_report/api.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You should see a number in the thousands. This is the total count of NY and NJ schools matching the CCD directory for 2019.</p>
-</section>
-<section id="converting-to-a-dataframe" class="level3">
-<h3 class="anchored" data-anchor-id="converting-to-a-dataframe">Converting to a DataFrame</h3>
-<p>Now convert the result and inspect it:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> educationdata <span class="im">import</span> EducationDataAPI</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>api <span class="op">=</span> EducationDataAPI()</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> api.ccd_directory(<span class="dv">2019</span>, fips<span class="op">=</span><span class="st">'36,34'</span>)</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result.count)</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> result.to_df()</span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head())</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Run again. After a short pause for pagination, you will see the first five rows and a column summary. The DataFrame has many columns — over 50. The next session will narrow it to the 9 columns the pipeline actually uses.</p>
-</section>
-<section id="exploring-the-columns" class="level3">
-<h3 class="anchored" data-anchor-id="exploring-the-columns">Exploring the columns</h3>
-<p>Add <code>.describe()</code> and a column list to get a better picture:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> educationdata <span class="im">import</span> EducationDataAPI</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>api <span class="op">=</span> EducationDataAPI()</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> api.ccd_directory(<span class="dv">2019</span>, fips<span class="op">=</span><span class="st">'36,34'</span>)</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result.count)</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> result.to_df()</span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head())</span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>df.info()</span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.describe())</span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.columns.tolist())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Run again. The column list will be long. Note the columns the pipeline cares about: <code>ncessch</code>, <code>school_name</code>, <code>zip_mailing</code>, <code>city_location</code>, <code>state_location</code>, <code>school_level</code>, <code>enrollment</code>, <code>lowest_grade_offered</code>, <code>highest_grade_offered</code>.</p>
-<p>Also note that <code>ncessch</code> and <code>zip_mailing</code> appear as floats — <code>360007702472.0</code>, <code>10001.0</code>. These are IDs that should be strings. <code>transform.py</code> will normalize them in Session 4.</p>
-<hr>
-</section>
-</section>
-<section id="api.py-v1-complete-file" class="level2">
-<h2 class="anchored" data-anchor-id="api.py-v1-complete-file">api.py v1 — Complete File</h2>
-<p>Here is the complete <code>api.py</code> v1:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> educationdata <span class="im">import</span> EducationDataAPI</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>api <span class="op">=</span> EducationDataAPI()</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> api.ccd_directory(<span class="dv">2019</span>, fips<span class="op">=</span><span class="st">'36,34'</span>)</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result.count)</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> result.to_df()</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head())</span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>df.info()</span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.describe())</span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.columns.tolist())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>In Session 11 we will:</p>
+<section id="writing-the-function" class="level3">
+<h3 class="anchored" data-anchor-id="writing-the-function">Writing the function</h3>
+<p>Now add <code>get_enrollment()</code> below the constant:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_enrollment():</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    conn <span class="op">=</span> LightOracleConnection()</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> conn.execute_query(ENROLLMENT_QUERY)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    df.columns <span class="op">=</span> df.columns.<span class="bu">str</span>.lower()</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Three things happen inside this function:</p>
 <ol type="1">
-<li>Define a <code>CCD_COLUMNS</code> list with the 9 columns the pipeline needs</li>
-<li>Wrap the API call in a <code>get_school_data(year)</code> function</li>
-<li>Return only the selected columns</li>
-<li>Remove the top-level print statements so <code>api.py</code> is safe to import from <code>main.py</code></li>
+<li>A new connection opens — it reads <code>ORACLE_USER</code>, <code>ORACLE_PASSWORD</code>, and <code>ORACLE_DSN</code> from the environment that <code>load_dotenv(...)</code> set up at the top of the file</li>
+<li>The query runs and returns a DataFrame</li>
+<li><code>df.columns.str.lower()</code> normalizes all column names to lowercase</li>
 </ol>
-<hr>
+<p>Oracle returns column names in uppercase (<code>STUDENT_ID</code>, <code>FIRST_NAME</code>, …). Lowercase names are easier to type and match the convention used by the rest of the pipeline. After this line, every column is <code>student_id</code>, <code>first_name</code>, and so on.</p>
+</section>
+<section id="running-the-function" class="level3">
+<h3 class="anchored" data-anchor-id="running-the-function">Running the function</h3>
+<p>To test <code>get_enrollment()</code> without making <code>db.py</code> run code on every import, add a <code>if __name__ == '__main__':</code> block at the bottom:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">'__main__'</span>:</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> get_enrollment()</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df.head())</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>if __name__ == '__main__':</code> is a Python convention: the indented block only executes when you run the file directly (<code>python student_report/db.py</code>). When another script imports <code>db.py</code>, the block is skipped entirely. This is the standard way to make a file both runnable for testing and safe to import.</p>
+<p>Run it:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> student_report/db.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You should see the first five rows of the enrollment result followed by a column summary. The column names will be lowercase. If you see a student ID repeated across rows, that is correct — each row is one enrollment, and students enrolled in multiple courses appear multiple times.</p>
+</section>
+<section id="exploring-the-result" class="level3">
+<h3 class="anchored" data-anchor-id="exploring-the-result">Exploring the result</h3>
+<p>Add <code>.describe()</code> to the <code>__main__</code> block and re-run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">'__main__'</span>:</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> get_enrollment()</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df.head())</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    df.info()</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df.describe())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>.describe()</code> reports summary statistics for numeric columns. Look at <code>student_id</code>, <code>cost</code>, and <code>final_grade</code>. Note the row count in <code>.info()</code> — it is larger than the number of students because each enrollment is its own row. Session 5 will deduplicate this to one row per student.</p>
+</section>
+<section id="saving-the-result-to-csv" class="level3">
+<h3 class="anchored" data-anchor-id="saving-the-result-to-csv">Saving the result to CSV</h3>
+<p>Add a <code>to_csv()</code> call to write the result to a file:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">'__main__'</span>:</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> get_enrollment()</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df.head())</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    df.info()</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>()</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(df.describe())</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>    df.to_csv(<span class="st">'student_report/reports/enrollment.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Saved enrollment.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Run again:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> student_report/db.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Open <code>student_report/reports/enrollment.csv</code> in VS Code or Excel and verify that the column names are lowercase and the data looks correct. This file is in <code>reports/</code>, which is gitignored — it is generated output, not source code.</p>
+</section>
+</section>
+<section id="db.py-v2-complete-file" class="level2">
+<h2 class="anchored" data-anchor-id="db.py-v2-complete-file">db.py v2 — Complete File</h2>
+<p>When you are finished exploring, remove the <code>if __name__ == '__main__':</code> block. Before deleting the block, make sure you have run <code>python student_report/db.py</code> at least once and confirmed <code>enrollment.csv</code> was saved. The final <code>db.py</code> defines one constant and one function:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lightoracle <span class="im">import</span> LightOracleConnection</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>load_dotenv(Path(<span class="va">__file__</span>).parent <span class="op">/</span> <span class="st">".env"</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>ENROLLMENT_QUERY <span class="op">=</span> <span class="st">"""</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="st">    SELECT</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="st">        s.STUDENT_ID,</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="st">        s.FIRST_NAME,</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="st">        s.LAST_NAME,</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="st">        s.ZIP,</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="st">        z.CITY,</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="st">        z.STATE,</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="st">        c.DESCRIPTION  AS COURSE_NAME,</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="st">        c.COST,</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="st">        e.ENROLL_DATE,</span></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a><span class="st">        e.FINAL_GRADE</span></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a><span class="st">    FROM student s</span></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a><span class="st">    JOIN zipcode    z ON s.ZIP        = z.ZIP</span></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a><span class="st">    JOIN enrollment e ON s.STUDENT_ID = e.STUDENT_ID</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a><span class="st">    JOIN section  sec ON e.SECTION_ID = sec.SECTION_ID</span></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a><span class="st">    JOIN course     c ON sec.COURSE_NO = c.COURSE_NO</span></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_enrollment():</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>    conn <span class="op">=</span> LightOracleConnection()</span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> conn.execute_query(ENROLLMENT_QUERY)</span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a>    df.columns <span class="op">=</span> df.columns.<span class="bu">str</span>.lower()</span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>main.py</code> (Session 13) will call <code>get_enrollment()</code> by importing <code>db.py</code>. Because there is no top-level code after <code>load_dotenv(...)</code>, the import is safe — no database query happens until <code>get_enrollment()</code> is explicitly called.</p>
+<blockquote class="blockquote">
+<p><strong>Note:</strong> <code>student_report/data/enrollment.csv</code> is a pre-committed static file generated from this function. Once <code>db.py</code> is wired into <code>main.py</code> in Session 13, every pipeline run regenerates it automatically from the live Oracle database — the static file is no longer needed for day-to-day use.</p>
+</blockquote>
+<p>In Session 11, we shift to the API side of the data flow. <code>db.py</code> stays exactly as it is.</p>
 </section>
 <section id="practice-exercise" class="level2">
 <h2 class="anchored" data-anchor-id="practice-exercise">Practice Exercise</h2>
 <blockquote class="blockquote">
 <p>Optional enrichment — complete during the session if time allows, or finish independently on your fork.</p>
+<p><strong>GSU network required</strong> (GSU WiFi on campus, or VPN if off campus).</p>
 </blockquote>
 <p>The starter script is at <a href="../exercises/session_10_exercise.py"><code>exercises/session_10_exercise.py</code></a>. It contains instructions and fill-in-the-blank placeholders. If you get stuck, the completed version is at <a href="../exercises/session_10_answer.py"><code>exercises/session_10_answer.py</code></a>.</p>
 <p>Run from the repo root:</p>
@@ -710,10 +795,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
 <ul>
-<li><a href="https://github.com/GSU-Analytics/EducationDataAPI">EducationDataAPI — GSU-Analytics/EducationDataAPI</a></li>
-<li><a href="https://educationdata.urban.org/">Urban Institute Education Data Portal</a></li>
-<li><a href="https://requests.readthedocs.io/">requests documentation</a></li>
-<li><em>Automate the Boring Stuff with Python</em>, Chapter 12 — Downloading Files from the Web</li>
+<li><a href="https://github.com/GSU-Analytics/lightoracle">lightoracle — GSU-Analytics/lightoracle</a></li>
+<li><a href="https://saurabh-kumar.com/python-dotenv/">python-dotenv documentation</a></li>
+<li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html">pandas — DataFrame.to_csv</a></li>
+<li><a href="https://github.com/GSU-Analytics/oracle-sql-training">GSU Oracle SQL Training</a> — SQL reference for the workshop schema</li>
 </ul>
 
 
@@ -1135,13 +1220,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../modules/session_09.html" class="pagination-link" aria-label="Session 9 — Working with Database Results">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Session 9 — Working with Database Results</span></span>
+      <a href="../modules/session_09.html" class="pagination-link" aria-label="Session 9 — Connecting to the Database">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Session 9 — Connecting to the Database</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../modules/session_11.html" class="pagination-link" aria-label="Session 11 — Working with API Results">
-        <span class="nav-page-text"><span class="chapter-title">Session 11 — Working with API Results</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../modules/session_11.html" class="pagination-link" aria-label="Session 11 — Calling a Web API">
+        <span class="nav-page-text"><span class="chapter-title">Session 11 — Calling a Web API</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

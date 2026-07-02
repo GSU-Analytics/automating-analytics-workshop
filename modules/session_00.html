@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -322,27 +357,32 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 3 — Pandas and Working with Data</span></a>
+  <a href="../modules/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before You Begin — Python Foundations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 — Merging the Three Sources</span></a>
+  <a href="../modules/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 — Pandas and Working with Data</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 — Aggregations and Summary Statistics</span></a>
+  <a href="../modules/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 — Merging the Three Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 — Creating Visualizations</span></a>
+  <a href="../modules/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 — Aggregations and Summary Statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 — Generating the Excel Report</span></a>
+  <a href="../modules/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 — Creating Visualizations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modules/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 — Generating the Excel Report</span></a>
   </div>
 </li>
       </ul>
@@ -358,22 +398,22 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 — Connecting to the Database</span></a>
+  <a href="../modules/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 — Connecting to the Database</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 — Working with Database Results</span></a>
+  <a href="../modules/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 — Working with Database Results</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 — Calling a Web API</span></a>
+  <a href="../modules/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 — Calling a Web API</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 — Working with API Results</span></a>
+  <a href="../modules/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 — Working with API Results</span></a>
   </div>
 </li>
       </ul>
@@ -389,7 +429,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 — The Automated Pipeline</span></a>
+  <a href="../modules/session_13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 13 — The Automated Pipeline</span></a>
   </div>
 </li>
       </ul>
@@ -405,7 +445,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../modules/session_13.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 13 — Introduction to Unit Testing <em>(Optional)</em></span></a>
+  <a href="../modules/session_14.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 14 — Introduction to Unit Testing <em>(Optional)</em></span></a>
   </div>
 </li>
       </ul>
@@ -421,47 +461,52 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 3 Exercise — Pandas Basics</span></a>
+  <a href="../exercises/session_03.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Before You Begin Exercise — Python Foundations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 Exercise — Merging Three Sources</span></a>
+  <a href="../exercises/session_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 4 Exercise — Pandas Basics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 Exercise — Aggregations and Summary Statistics</span></a>
+  <a href="../exercises/session_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 5 Exercise — Merging Three Sources</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 Exercise — Creating Visualizations</span></a>
+  <a href="../exercises/session_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 6 Exercise — Aggregations and Summary Statistics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 Exercise — Generating the Excel Report</span></a>
+  <a href="../exercises/session_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 7 Exercise — Creating Visualizations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 Exercise — Oracle Connection</span></a>
+  <a href="../exercises/session_08.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 8 Exercise — Generating the Excel Report</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 Exercise — Working with Database Results</span></a>
+  <a href="../exercises/session_09.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 9 Exercise — Oracle Connection</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 Exercise — Calling the Education Data API</span></a>
+  <a href="../exercises/session_10.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 10 Exercise — Working with Database Results</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../exercises/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 Exercise — Working with API Results</span></a>
+  <a href="../exercises/session_11.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 11 Exercise — Calling the Education Data API</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../exercises/session_12.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Session 12 Exercise — Working with API Results</span></a>
   </div>
 </li>
       </ul>
@@ -522,18 +567,17 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>This document walks you through everything you need to do before Session 1. By the time you finish, you will have four tools installed and verified, a GitHub account, and your own copy of the workshop code ready to go.</p>
+<p>This document walks you through everything you need to do before Session 1. By the time you finish, you will have five tools set up and your own copy of the workshop code ready to go.</p>
 <p>Complete these steps on your own before the first session. If you run into problems, see the <a href="#getting-help">Getting Help</a> section at the bottom.</p>
-<hr>
 </section>
 <section id="the-tool-stack" class="level2">
 <h2 class="anchored" data-anchor-id="the-tool-stack">The Tool Stack</h2>
-<p>This workshop uses four tools. Each one has a specific job; none of them overlap. You do not need to install Python separately — it comes bundled with Miniconda.</p>
-<p><strong>VS Code</strong> is the code editor. It is where you will read and write Python files. It also has a built-in terminal panel where you run all your commands without switching windows.</p>
-<p><strong>Git Bash</strong> is a command-line terminal for Windows that is included automatically when you install Git. You will use it as the built-in terminal inside VS Code. Every command you run in this workshop — activating the conda environment, running Python scripts, committing your work — happens here.</p>
-<p><strong>Miniconda (conda)</strong> is an environment manager. It installs Python and creates an isolated environment — a named set of packages at specific versions — so that this project’s dependencies do not interfere with anything else on your computer. Every participant runs the exact same version of every package.</p>
-<p><strong>Git</strong> is version control. It records every change you make to your code so you can see what changed, when, and why — and undo it if something breaks.</p>
-<p><strong>GitHub</strong> is a cloud platform for storing and sharing Git repositories. It is where the workshop code lives and where you will back up your work. You need a free account; no software installation required.</p>
+<p>This workshop uses five tools. Each one has a specific job; none of them overlap. You do not need to install Python separately. Python comes bundled with Miniconda.</p>
+<p><strong>1. VS Code</strong> is the code editor. It is where you will read and write Python files. It also has a built-in terminal panel where you run all your commands without switching windows.</p>
+<p><strong>2. Git Bash</strong> is a command-line terminal for Windows that is included automatically when you install Git. You will use it as the built-in terminal inside VS Code. Every command you run in this workshop, such as activating the conda environment, running Python scripts, committing your work, happens here.</p>
+<p><strong>3. Miniconda (conda)</strong> is an environment manager. It installs Python and creates an isolated environment (a named set of packages at specific versions) so that this project’s dependencies do not interfere with anything else on your computer. Every participant runs the exact same version of every package.</p>
+<p><strong>4. Git</strong> is version control. It records every change you make to your code so you can see what changed, when, and why, and undo it if something breaks.</p>
+<p><strong>5. GitHub</strong> is a cloud platform for storing and sharing Git repositories. It is where the workshop code lives and where you will back up your work. You need a free account; no software installation required.</p>
 <section id="how-they-connect" class="level3">
 <h3 class="anchored" data-anchor-id="how-they-connect">How They Connect</h3>
 <div class="quarto-figure quarto-figure-center">
@@ -542,8 +586,7 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Tool stack diagram showing VS Code, Git Bash, conda environment, Git, and GitHub and how they connect</figcaption>
 </figure>
 </div>
-<p>You write Python files in the VS Code editor. Git Bash — running as the built-in terminal inside VS Code — is where you type commands. Those commands activate the conda environment to run your code, produce the output files, and save your work to Git and GitHub.</p>
-<hr>
+<p>You write Python files in the VS Code editor. Git Bash, running as the built-in terminal inside VS Code, is where you type commands. Those commands activate the conda environment to run your code, produce the output files, and save your work to Git and GitHub.</p>
 </section>
 </section>
 <section id="a-note-on-gsu-managed-machines" class="level2">
@@ -551,7 +594,6 @@ ul.task-list li input[type="checkbox"] {
 <p>These tools should install on GSU-managed computers without administrator credentials. If an installer asks for a password you do not have, double-check that you are following the steps correctly.</p>
 <p>If the prompt persists, contact the <a href="https://technology.gsu.edu/about/contact/">GSU Technology Help Desk</a> and ask them to install Miniconda, Git, and VS Code before Session 1.</p>
 <p>Allow <strong>30–60 minutes</strong> for the full setup, not including any IT wait time.</p>
-<hr>
 </section>
 <section id="installation-steps" class="level2">
 <h2 class="anchored" data-anchor-id="installation-steps">Installation Steps</h2>
@@ -564,13 +606,12 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Run the installer. When you reach the <strong>Advanced Installation Options</strong> screen, check <strong>“Add Miniconda3 to your PATH environment variable.”</strong> Accept all other defaults.</p></li>
 <li><p>Click <strong>Install</strong>, then <strong>Finish</strong>.</p></li>
 <li><p>Open a new <strong>Command Prompt</strong> (<code>Win + R</code>, type <code>cmd</code>, press Enter) and run:</p>
-<pre><code>conda --version</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>You should see output like <code>conda 24.x.x</code>. If you see an error, re-run the installer and confirm the PATH option was checked.</p></li>
 </ol>
 <blockquote class="blockquote">
 <p><strong>Video walkthrough:</strong> <a href="https://www.youtube.com/watch?v=-H_onyfW9VE">Downloading and Installing Miniconda3</a></p>
 </blockquote>
-<hr>
 </section>
 <section id="step-2-github-account" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-github-account">Step 2 — GitHub Account</h3>
@@ -580,31 +621,29 @@ ul.task-list li input[type="checkbox"] {
 <li>Verify your email address when GitHub sends you a confirmation message.</li>
 </ol>
 <p>You do not need a paid plan or an organization account. A free personal account is all that is required.</p>
-<hr>
 </section>
 <section id="step-3-git-and-git-bash" class="level3">
 <h3 class="anchored" data-anchor-id="step-3-git-and-git-bash">Step 3 — Git and Git Bash</h3>
-<p>Git Bash is included automatically with the Git for Windows installer — no separate download is needed.</p>
+<p>Git Bash is included automatically with the Git for Windows installer. There is no separate download needed.</p>
 <ol type="1">
 <li><p>Download the <strong>Windows</strong> installer from the <a href="https://git-scm.com/downloads">Git download page</a>. Select the most recent version at the top of the page.</p></li>
-<li><p>Run the installer. Accept all default options on every screen. On the <strong>Choosing the terminal emulator</strong> screen, confirm that <strong>“Use MinTTY (the default terminal of MSYS2)”</strong> is selected — this is Git Bash.</p></li>
+<li><p>Run the installer. Accept all default options on every screen. On the <strong>Choosing the terminal emulator</strong> screen, confirm that <strong>“Use MinTTY (the default terminal of MSYS2)”</strong> is selected. (This is Git Bash)</p></li>
 <li><p>Click <strong>Install</strong>, then <strong>Finish</strong>.</p></li>
 <li><p>Open a new <strong>Command Prompt</strong> and run:</p>
-<pre><code>git --version</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>You should see output like <code>git version 2.x.x</code>.</p></li>
 </ol>
 <section id="configure-git" class="level4">
 <h4 class="anchored" data-anchor-id="configure-git">Configure Git</h4>
 <p>Git needs your name and email to label your commits. Run these two commands in Git Bash, replacing the values with your own name and the email address you used to create your GitHub account:</p>
-<pre><code>git config --global user.name "Your Name"
-git config --global user.email "you@example.com"</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Your Name"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"you@example.com"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Verify the settings saved:</p>
-<pre><code>git config --list</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--list</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>You should see <code>user.name</code> and <code>user.email</code> in the output.</p>
 <blockquote class="blockquote">
 <p><strong>Video walkthrough:</strong> <a href="https://youtu.be/4xqVv2lTo40?si=GVTTywH1x-hzSGE6&amp;t=33">Installing Git on Windows</a></p>
 </blockquote>
-<hr>
 </section>
 </section>
 <section id="step-4-visual-studio-code" class="level3">
@@ -614,7 +653,7 @@ git config --global user.email "you@example.com"</code></pre>
 <li><p>Run the installer and accept all default options.</p></li>
 <li><p><strong>Reboot your computer</strong> before continuing.</p></li>
 <li><p>Open a new <strong>Command Prompt</strong> and run:</p>
-<pre><code>code --version</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">code</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>You should see a version number on the first line (e.g., <code>1.9x.x</code>).</p></li>
 </ol>
 <section id="set-git-bash-as-the-built-in-terminal" class="level4">
@@ -643,7 +682,6 @@ git config --global user.email "you@example.com"</code></pre>
 <blockquote class="blockquote">
 <p><strong>Video walkthrough:</strong> <a href="https://www.youtube.com/watch?v=CPmQwlycfGI">Installing VSCode on Windows</a></p>
 </blockquote>
-<hr>
 </section>
 </section>
 </section>
@@ -676,9 +714,8 @@ git config --global user.email "you@example.com"</code></pre>
 </tr>
 </tbody>
 </table>
-<p>Running these checks in Git Bash — rather than Command Prompt — also confirms that Git Bash itself is working correctly.</p>
+<p>Running these checks in Git Bash, rather than Command Prompt, also confirms that Git Bash itself is working correctly.</p>
 <p>If any command returns an error or <code>command not found</code>, see <a href="#getting-help">Getting Help</a> below before Session 1.</p>
-<hr>
 </section>
 <section id="fork-the-workshop-repo" class="level2">
 <h2 class="anchored" data-anchor-id="fork-the-workshop-repo">Fork the Workshop Repo</h2>
@@ -691,7 +728,6 @@ git config --global user.email "you@example.com"</code></pre>
 <p>Your fork will appear at:</p>
 <pre><code>https://github.com/YOUR-USERNAME/automating-analytics-workshop</code></pre>
 <p><strong>Stop here.</strong> You will clone your fork to your computer at the start of Session 2, under instructor guidance.</p>
-<hr>
 </section>
 <section id="getting-help" class="level2">
 <h2 class="anchored" data-anchor-id="getting-help">Getting Help</h2>
@@ -710,7 +746,7 @@ git config --global user.email "you@example.com"</code></pre>
 </tr>
 <tr class="even">
 <td>Pre-workshop questions and troubleshooting</td>
-<td>[TBD — Teams channel link]</td>
+<td><a href="https://teams.microsoft.com/l/chat/19:4d970a6b3f7e4a53befaa7528a3b4e70@thread.v2/conversations?context=%7B%22contextType%22%3A%22chat%22%7D">Teams channel link</a></td>
 </tr>
 <tr class="odd">
 <td>Office hours</td>
@@ -719,13 +755,11 @@ git config --global user.email "you@example.com"</code></pre>
 </tbody>
 </table>
 <p><strong>Teams channel:</strong> The workshop has a dedicated Microsoft Teams channel for questions, troubleshooting, and announcements. Join before Session 1 so you have a place to ask for help with setup. <a href="https://teams.microsoft.com/l/chat/19:4d970a6b3f7e4a53befaa7528a3b4e70@thread.v2/conversations?context=%7B%22contextType%22%3A%22chat%22%7D">Join the Teams chat here</a>.</p>
-<hr>
 </section>
 <section id="vpn-off-campus-only" class="level2">
 <h2 class="anchored" data-anchor-id="vpn-off-campus-only">VPN (Off-Campus Only)</h2>
-<p>VPN is <strong>not required</strong> during workshop sessions. When you are on campus and connected to GSU WiFi, your computer is already within the GSU network and can reach the training database used in Sessions 8 and 9.</p>
+<p>VPN is <strong>not required</strong> during workshop sessions. When you are on campus and connected to GSU WiFi, your computer is already within the GSU network and can reach the training database used in Sessions 9 and 10.</p>
 <p>If you plan to work on exercises off-campus, you will need to connect via VPN first. Setup instructions are on the <a href="https://technology.gsu.edu/technology-services/cybersecurity/virtual-private-network/">GSU Technology — Virtual Private Network</a> page.</p>
-<hr>
 </section>
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional Resources</h2>
