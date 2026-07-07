@@ -644,15 +644,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="normalizing-the-join-keys">Normalizing the join keys</h3>
 <p>Before merging, the join key columns need to be in a consistent format. Two problems come from the API data in <code>schools.csv</code>:</p>
 <ul>
-<li><code>ncessch</code> was returned as a float: <code>360007702472.0</code>. The survey CSV stores it without the decimal: <code>360007702472</code>. These will not match unless we normalize both sides.</li>
-<li><code>zip_mailing</code> was returned as a float: <code>10001.0</code>. ZIP codes are five-digit strings and need zero-padding for short codes.</li>
+<li><code>ncessch</code> is stored as an integer: <code>360007702472</code>. The survey CSV also stores it as an integer, but both need to be normalized to strings before merging so the types match.</li>
+<li><code>zip_mailing</code> is stored as an integer: <code>10001</code>. ZIP codes are five-digit strings and need zero-padding for short codes.</li>
 </ul>
-<p>The enrollment <code>zip</code> column comes from Oracle as a string but may also need zero-padding.</p>
-<p>The normalization pattern for a float-to-clean-string conversion is:</p>
+<p>The enrollment <code>zip</code> column comes from Oracle as an integer but may also need zero-padding.</p>
+<p>The normalization pattern for an integer-to-clean-string conversion is:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>column.astype(<span class="bu">str</span>).<span class="bu">str</span>.split(<span class="st">'.'</span>).<span class="bu">str</span>[<span class="dv">0</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li><code>.astype(str)</code> converts <code>360007702472.0</code> → <code>'360007702472.0'</code></li>
-<li><code>.str.split('.')</code> splits on the decimal point → <code>['360007702472', '0']</code></li>
+<li><code>.astype(str)</code> converts <code>360007702472</code> → <code>'360007702472'</code></li>
+<li><code>.str.split('.')</code> splits on the decimal point → <code>['360007702472']</code></li>
 <li><code>.str[0]</code> takes the first part → <code>'360007702472'</code></li>
 </ul>
 <p>For ZIP codes, append <code>.str.zfill(5)</code> to pad short codes with leading zeros: <code>'7102'</code> → <code>'07102'</code>.</p>

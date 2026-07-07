@@ -531,10 +531,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#inspecting-a-dataset" id="toc-inspecting-a-dataset" class="nav-link" data-scroll-target="#inspecting-a-dataset">Inspecting a Dataset</a>
   <ul class="collapse">
   <li><a href="#head" id="toc-head" class="nav-link" data-scroll-target="#head"><code>.head()</code></a></li>
+  <li><a href="#columns" id="toc-columns" class="nav-link" data-scroll-target="#columns"><code>.columns</code></a></li>
   <li><a href="#info" id="toc-info" class="nav-link" data-scroll-target="#info"><code>.info()</code></a></li>
   <li><a href="#describe" id="toc-describe" class="nav-link" data-scroll-target="#describe"><code>.describe()</code></a></li>
   </ul></li>
   <li><a href="#selecting-columns" id="toc-selecting-columns" class="nav-link" data-scroll-target="#selecting-columns">Selecting Columns</a></li>
+  <li><a href="#dropping-missing-values" id="toc-dropping-missing-values" class="nav-link" data-scroll-target="#dropping-missing-values">Dropping Missing Values</a></li>
   <li><a href="#filtering-rows" id="toc-filtering-rows" class="nav-link" data-scroll-target="#filtering-rows">Filtering Rows</a></li>
   <li><a href="#writing-a-function" id="toc-writing-a-function" class="nav-link" data-scroll-target="#writing-a-function">Writing a Function</a>
   <ul class="collapse">
@@ -606,7 +608,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/survey_middle_schools.csv'</span>)</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Run from the repo root:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scratch.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> scratch.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>You should see a table with three columns — <code>student_id</code>, <code>middle_school_name</code>, and <code>ncessch</code> — and several rows.</p>
 <blockquote class="blockquote">
 <p><strong>Always run scripts from the repo root.</strong> If you run from a different directory, relative file paths like <code>student_report/data/...</code> will not resolve.</p>
@@ -634,54 +636,70 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.head(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Use this first every time you load a new file.</p>
 </section>
+<section id="columns" class="level3">
+<h3 class="anchored" data-anchor-id="columns"><code>.columns</code></h3>
+<p>Returns a list of column names:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.columns)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Use this to check column names before selecting them. Column names must match exactly when you select them later.</p>
+</section>
 <section id="info" class="level3">
 <h3 class="anchored" data-anchor-id="info"><code>.info()</code></h3>
 <p>Prints column names, non-null counts, and data types:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The non-null count is important: if a column has fewer non-null values than total rows, some values are missing (<code>NaN</code>). You will deal with missing data in the merge step.</p>
 </section>
 <section id="describe" class="level3">
 <h3 class="anchored" data-anchor-id="describe"><code>.describe()</code></h3>
 <p>Computes summary statistics for numeric columns:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.describe())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df.describe())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>For this dataset, only <code>student_id</code> is numeric, so you will see its count, mean, min, and max. On richer datasets, <code>.describe()</code> immediately shows whether values are in a plausible range.</p>
 </section>
 </section>
 <section id="selecting-columns" class="level2">
 <h2 class="anchored" data-anchor-id="selecting-columns">Selecting Columns</h2>
 <p>Select one column using bracket notation — this returns a <strong>Series</strong>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[<span class="st">'middle_school_name'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[<span class="st">'middle_school_name'</span>])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Select multiple columns by passing a list — this returns a <strong>DataFrame</strong>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[[<span class="st">'student_id'</span>, <span class="st">'middle_school_name'</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[[<span class="st">'student_id'</span>, <span class="st">'middle_school_name'</span>]])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Note the double brackets: the outer <code>[ ]</code> is the selection operator; the inner <code>[ ]</code> is a Python list of column names.</p>
 <p>You can assign the result to a new variable:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>names_only <span class="op">=</span> df[[<span class="st">'student_id'</span>, <span class="st">'middle_school_name'</span>]]</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(names_only.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>names_only <span class="op">=</span> df[[<span class="st">'student_id'</span>, <span class="st">'middle_school_name'</span>]]</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(names_only.head())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Column selection is how every module in this pipeline trims down a wide DataFrame to only the columns it actually needs. In <code>transform.py</code>, <code>get_students()</code> selects six columns from the full Oracle enrollment result before doing anything else with the data.</p>
+</section>
+<section id="dropping-missing-values" class="level2">
+<h2 class="anchored" data-anchor-id="dropping-missing-values">Dropping Missing Values</h2>
+<p>Drop rows with any missing values:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df_clean <span class="op">=</span> df.dropna()</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_clean.info())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Dropping rows with a subset of missing values is also possible:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df_clean <span class="op">=</span> df.dropna(subset<span class="op">=</span>[<span class="st">'middle_school_name'</span>])</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_clean.info())</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This is how <code>transform.py</code> drops rows with missing <code>ncessch</code> values before merging with the schools CSV.</p>
 </section>
 <section id="filtering-rows" class="level2">
 <h2 class="anchored" data-anchor-id="filtering-rows">Filtering Rows</h2>
 <p>Filter rows by writing a condition inside <code>[ ]</code>. The condition must compare a column to a value and return <code>True</code> or <code>False</code> for each row.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>target_school <span class="op">=</span> df[df[<span class="st">'middle_school_name'</span>] <span class="op">==</span> <span class="st">'Bloomfield Middle School'</span>]</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(target_school)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>target_school <span class="op">=</span> df[df[<span class="st">'middle_school_name'</span>] <span class="op">==</span> <span class="st">'Bloomfield Middle School'</span>]</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(target_school)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>pandas evaluates <code>df['middle_school_name'] == 'Bloomfield Middle School'</code> row by row, producing a column of <code>True</code>/<code>False</code> values called a <strong>boolean mask</strong>. Placing that mask inside <code>df[ ]</code> keeps only the rows where the condition is <code>True</code>.</p>
 <p>Combine conditions with <code>&amp;</code> (and) or <code>|</code> (or). Wrap each condition in parentheses:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>nj_schools <span class="op">=</span> df[</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    (df[<span class="st">'middle_school_name'</span>] <span class="op">==</span> <span class="st">'Bloomfield Middle School'</span>) <span class="op">|</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    (df[<span class="st">'middle_school_name'</span>] <span class="op">==</span> <span class="st">'Carteret Middle School'</span>)</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>]</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nj_schools)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>nj_schools <span class="op">=</span> df[</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    (df[<span class="st">'middle_school_name'</span>] <span class="op">==</span> <span class="st">'Bloomfield Middle School'</span>) <span class="op">|</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    (df[<span class="st">'middle_school_name'</span>] <span class="op">==</span> <span class="st">'Carteret Middle School'</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nj_schools)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="writing-a-function" class="level2">
 <h2 class="anchored" data-anchor-id="writing-a-function">Writing a Function</h2>
 <p>So far, every operation has been written as a standalone line. When you need to repeat the same steps — or when a block of code has a clear single purpose — wrap it in a function.</p>
 <p>Here is a function that takes the survey DataFrame and returns a count of students per school, sorted from most to least:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_by_school(df):</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    counts <span class="op">=</span> df.groupby(<span class="st">'middle_school_name'</span>).size().reset_index(name<span class="op">=</span><span class="st">'student_count'</span>)</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> counts.sort_values(<span class="st">'student_count'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_by_school(df):</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    counts <span class="op">=</span> df.groupby(<span class="st">'middle_school_name'</span>).size().reset_index(name<span class="op">=</span><span class="st">'student_count'</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> counts.sort_values(<span class="st">'student_count'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Add this to <code>scratch.py</code> and call it:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> count_by_school(df)</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result.head(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> count_by_school(df)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(result.head(<span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This is a simplified preview of <code>summarize_top_schools()</code> in <code>transform.py</code>, which you will build in Session 6. The structure is the same: a function accepts a DataFrame, performs a transformation, and returns a new DataFrame.</p>
 <section id="why-functions" class="level3">
 <h3 class="anchored" data-anchor-id="why-functions">Why functions?</h3>
@@ -698,18 +716,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The pipeline uses three CSV files in total. You just explored the survey CSV. The other two are also in <code>student_report/data/</code>.</p>
 <section id="enrollment.csv" class="level3">
 <h3 class="anchored" data-anchor-id="enrollment.csv">enrollment.csv</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>enrollment_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/enrollment.csv'</span>)</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(enrollment_df.head())</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>enrollment_df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>enrollment_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/enrollment.csv'</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(enrollment_df.head())</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>enrollment_df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>A few things to notice: - Column names are lowercase — a normalization step that <code>db.py</code> applies when it queries Oracle. - There are more rows than students. A student enrolled in three courses appears three times — one row per enrollment. Session 5 will deduplicate this to one row per student before merging. - <code>student_id</code> is the key that links this file to the survey.</p>
 <p>This file was exported from the Oracle training database. In Sessions 9–10 you will write the Python code that generates it automatically.</p>
 </section>
 <section id="schools.csv" class="level3">
 <h3 class="anchored" data-anchor-id="schools.csv">schools.csv</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>school_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/schools.csv'</span>)</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(school_df.head())</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>school_df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>A few things to notice: - <code>ncessch</code> and <code>zip_mailing</code> appear as floats — <code>360007702472.0</code>, <code>10001.0</code>. These are IDs that should be strings. This is a quirk of how the Urban Institute API returns them; <code>transform.py</code> normalizes them in Session 5 before merging. - <code>school_level</code> encodes the school type: <code>2.0</code> means middle school. - There are thousands of rows — every NY and NJ school in the 2019 CCD directory.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>school_df <span class="op">=</span> pd.read_csv(<span class="st">'student_report/data/schools.csv'</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(school_df.head())</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>school_df.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A few things to notice: - <code>ncessch</code> and <code>zip_mailing</code> appear as integers — <code>360007702472</code>, <code>10001</code>. These are IDs that should be strings; <code>transform.py</code> normalizes them in Session 5 before merging. - <code>school_level</code> encodes the school type: <code>2</code> means middle school. - There are thousands of rows — every NY and NJ school in the 2019 CCD directory.</p>
 <p>This file was downloaded from the Urban Institute Education Data Portal. In Sessions 11–12 you will write the Python code that generates it automatically.</p>
 </section>
 <section id="why-these-files-are-here" class="level3">
